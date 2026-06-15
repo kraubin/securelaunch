@@ -416,7 +416,7 @@ for fast-growing startups and SaaS teams.
 
   <span className="text-cyan-400 font-semibold">
 
-    {" "}SecureLaunch
+    {" "}SecureLaunch 
 
   </span>
 
@@ -427,24 +427,39 @@ for fast-growing startups and SaaS teams.
 
         <p className="text-gray-300 mt-10">
 
-          hello@securelaunch.co.in
+  hello@securelaunch.co.in
 
-        </p>
+</p>
 
-        <p className="text-gray-300 mt-4">
+<p className="text-gray-300 mt-4">
 
-          India
+  Remote • Available Worldwide
 
-        </p>
+</p>
 
 
-        <a href="mailto:hello@securelaunch.co.in">
+<a
+  href="https://www.linkedin.com/company/securelaunch-in"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="inline-block mt-6 text-cyan-400 hover:text-cyan-300 font-semibold"
+>
 
-<button className="bg-cyan-500 hover:bg-cyan-400 text-black px-8 py-4 rounded-xl mt-10 font-semibold">
+  Connect with us on LinkedIn →
 
-Get Free QA Audit
+</a>
 
-</button>
+
+<br />
+
+
+<a href="mailto:hello@securelaunch.co.in">
+
+  <button className="bg-cyan-500 hover:bg-cyan-400 text-black px-8 py-4 rounded-xl mt-10 font-semibold">
+
+    Get Free QA Audit
+
+  </button>
 
 </a>
       </section>
@@ -454,14 +469,26 @@ Get Free QA Audit
 
       <footer className="border-t border-slate-800 py-8 text-center text-gray-400">
 
-        © 2025 SecureLaunch. All rights reserved.
+  © 2025 SecureLaunch. All rights reserved.
 
-        <br />
+  <br />
 
-        AI-Powered Quality Engineering & DevOps.
+  AI-Powered Quality Engineering & DevOps.
 
-      </footer>
+  <br />
 
+  <a
+    href="https://www.linkedin.com/company/securelaunch-in"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-cyan-400 hover:text-cyan-300"
+  >
+
+    LinkedIn
+
+  </a>
+
+</footer>
     </main>
   );
 }
