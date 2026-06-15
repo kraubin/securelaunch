@@ -63,17 +63,22 @@ Scale Confidently.
 
         <p className="text-lg md:text-xl text-gray-300 mt-8 max-w-3xl leading-relaxed">
 
-Build reliable software with confidence.
+  Reduce production bugs, automate testing
+  and release with confidence.
 
-SecureLaunch helps startups reduce production bugs,
-automate testing and ship faster using
+  <br />
 
-<span className="text-cyan-400 font-semibold">
+  <br />
 
-{" "}AI-powered QA,
-Modern DevOps and Release Engineering.
+  <span className="text-cyan-400 font-semibold">
 
-</span>
+    SecureLaunch
+
+  </span>
+
+  helps startups build reliable software through
+  AI-powered QA, Modern DevOps and
+  Release Engineering.
 
 </p>
 
@@ -474,19 +479,6 @@ for fast-growing startups and SaaS teams.
   <br />
 
   AI-Powered Quality Engineering & DevOps.
-
-  <br />
-
-  <a
-    href="https://www.linkedin.com/company/securelaunch-in"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="text-cyan-400 hover:text-cyan-300"
-  >
-
-    LinkedIn
-
-  </a>
 
 </footer>
     </main>
