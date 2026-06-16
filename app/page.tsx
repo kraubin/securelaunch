@@ -7,434 +7,433 @@ export const metadata = {
 };
 
 export default function Home() {
-  const services = [
-    {
-      title: "QA Automation",
-      tagline: "Stop shipping bugs to production.",
-      body: "Playwright, Selenium, API automation — built into your CI pipeline with parallel execution, real reporting, and coverage that actually matters.",
-      pills: ["Playwright", "Selenium", "REST Assured", "Allure Reports"],
-      svg: (
-        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-          <path d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2v-4M9 21H5a2 2 0 0 1-2-2v-4m0 0h18" />
-        </svg>
-      ),
-    },
-    {
-      title: "DevOps & CI/CD",
-      tagline: "Deploy multiple times a week. Without fear.",
-      body: "GitHub Actions, Docker, Kubernetes. Automated quality gates so every deploy is validated before it touches production.",
-      pills: ["GitHub Actions", "Docker", "Kubernetes", "AWS"],
-      svg: (
-        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-          <circle cx="12" cy="12" r="3" />
-          <path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83" />
-        </svg>
-      ),
-    },
-    {
-      title: "AI-Powered QA",
-      tagline: "Make your test suite smarter, not bigger.",
-      body: "Self-healing locators, AI-generated test cases, LLM-powered failure analysis. Your team ships faster — the AI handles the repetitive QA work.",
-      pills: ["Claude API", "Self-Healing", "NLP to Tests", "Failure Analysis"],
-      svg: (
-        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-          <rect x="3" y="3" width="18" height="18" rx="2" />
-          <path d="M9 9h.01M15 9h.01M9 15h6" />
-        </svg>
-      ),
-    },
-  ];
-
-  const caseStudies = [
-    {
-      tag: "QA Automation",
-      title: "From 3-day regression cycles to 4-hour deploys",
-      problem: "A 6-person SaaS team was manually testing 200+ user flows before every release. Bugs still slipped through. Founders were losing sleep before deploys.",
-      solution: "Built a Playwright E2E suite + REST API automation layer, integrated into GitHub Actions with parallel execution and Allure reporting. Test coverage: 20% → 85%.",
-      result: "Release cycle dropped from 3 days to 4 hours. Zero critical regressions in 3 months post-launch.",
-      metric: "3 days → 4 hrs",
-    },
-    {
-      tag: "DevOps & CI/CD",
-      title: "Zero-downtime deploys for a fast-moving fintech",
-      problem: "Deployments happened over SSH with no staging environment and no rollback plan. Every deploy was a gamble.",
-      solution: "Docker + Kubernetes on AWS, GitHub Actions pipelines with automated smoke tests as quality gates, and a blue-green deployment strategy.",
-      result: "Multiple reliable deploys per week. Zero production incidents in 2 months after go-live.",
-      metric: "0 incidents",
-    },
-  ];
-
-  const steps = [
-    {
-      n: "01",
-      title: "Free audit call",
-      desc: "30 minutes. I review your testing setup and give you an honest picture of where the biggest risks are. No pitch — just clarity.",
-    },
-    {
-      n: "02",
-      title: "Written roadmap",
-      desc: "You get a prioritized action plan: what to automate first, which tools fit your stack, and realistic timelines. Yours to keep either way.",
-    },
-    {
-      n: "03",
-      title: "I build it",
-      desc: "I execute the plan directly. No handoffs to junior devs, no account managers in the way. You work with the same person who designed the strategy.",
-    },
-  ];
-
-  const faqs = [
-    {
-      q: "Are you a team or a solo consultant?",
-      a: "Solo. You work directly with me — Raubin Kumar. No account managers, no handoffs. That's intentional.",
-    },
-    {
-      q: "Why hire you instead of an Upwork freelancer?",
-      a: "I don't write test scripts — I design QA systems. There's a difference. After 7+ years doing this across fintech, SaaS, and enterprise, I know what breaks before it breaks.",
-    },
-    {
-      q: "Do you work with non-Indian startups?",
-      a: "Yes. All engagements are remote. I work with teams across India, Southeast Asia, and Europe.",
-    },
-    {
-      q: "What's the smallest engagement?",
-      a: "The free audit is zero commitment. From there, the smallest paid engagement is a focused 2-week sprint.",
-    },
-  ];
-
-  const auditItems = [
-    "Review your current QA and release process",
-    "Identify the highest-risk automation gaps",
-    "CI/CD pipeline health check",
-    "Playwright vs Selenium recommendation for your stack",
-    "AI-powered QA opportunities specific to your product",
-    "30-min call + written summary delivered after",
-  ];
-
   return (
-    <main className="min-h-screen bg-[#080C14] text-white font-sans antialiased overflow-x-hidden">
+    <main className="bg-white text-[#0a0a0a] font-sans antialiased overflow-x-hidden selection:bg-cyan-100">
 
-      {/* ── Sticky Nav ─────────────────────────────────── */}
-      <nav className="fixed top-0 left-0 right-0 z-50 border-b border-white/[0.08] bg-[#080C14] backdrop-blur-xl">
-        <div className="max-w-6xl mx-auto px-6 h-16 flex justify-between items-center">
-          <a href="/" className="text-xl font-bold tracking-tight">
-            Secure<span className="text-cyan-400">Launch</span>
+      {/* ── Nav ────────────────────────────────────────── */}
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-black/[0.06]">
+        <div className="max-w-6xl mx-auto px-6 h-14 flex justify-between items-center">
+          <a href="/" className="text-base font-bold tracking-tight text-[#0a0a0a]">
+            Secure<span className="text-cyan-500">Launch</span>
           </a>
-          <div className="hidden md:flex items-center gap-8 text-sm text-gray-400">
-            <a href="#services" className="hover:text-white transition-colors duration-150">Services</a>
-            <a href="#cases"    className="hover:text-white transition-colors duration-150">Work</a>
-            <a href="#about"    className="hover:text-white transition-colors duration-150">About</a>
+          <div className="hidden md:flex items-center gap-8 text-sm text-gray-500">
+            <a href="#services" className="hover:text-black transition-colors">Services</a>
+            <a href="#cases"    className="hover:text-black transition-colors">Work</a>
+            <a href="#about"    className="hover:text-black transition-colors">About</a>
             <a
               href="https://calendly.com/kraubin192/30min"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="ml-3 bg-cyan-500 hover:bg-cyan-400 active:scale-95 text-black text-sm font-bold px-6 py-2.5 rounded-lg transition-all duration-150"
+              target="_blank" rel="noopener noreferrer"
+              className="ml-2 bg-[#0a0a0a] hover:bg-[#222] text-white text-sm font-semibold px-5 py-2 rounded-lg transition-colors"
             >
               Book Free Audit
             </a>
           </div>
           <a
             href="https://calendly.com/kraubin192/30min"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="md:hidden bg-cyan-500 text-black text-sm font-bold px-4 py-2.5 rounded-lg active:scale-95 transition-all"
+            target="_blank" rel="noopener noreferrer"
+            className="md:hidden bg-[#0a0a0a] text-white text-sm font-semibold px-4 py-2 rounded-lg"
           >
             Book Audit
           </a>
         </div>
       </nav>
 
-      {/* ── Hero ───────────────────────────────────────── */}
-      {/* pt-24 = 96px which is exactly nav height (64px) + breathing room */}
-      <section className="relative max-w-6xl mx-auto px-6 pt-36 pb-24">
-        <div
-          aria-hidden
-          className="pointer-events-none absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[350px] rounded-full opacity-[0.08]"
-          style={{ background: "radial-gradient(ellipse at center, #22d3ee 0%, transparent 70%)" }}
-        />
-
-        <div className="relative">
-          <div className="inline-flex items-center gap-2 border border-cyan-500/25 bg-cyan-500/[0.07] rounded-full px-4 py-1.5 text-cyan-400 text-sm font-medium mb-8">
-            <span className="w-1.5 h-1.5 bg-cyan-400 rounded-full animate-pulse" />
-            Available for new clients · Remote · Worldwide
+      {/* ── Hero — Full screen, dramatic ───────────────── */}
+      <section className="min-h-screen flex flex-col justify-center max-w-6xl mx-auto px-6 pt-14">
+        <div className="py-24 md:py-0">
+          {/* Availability pill */}
+          <div className="inline-flex items-center gap-2 text-xs text-gray-500 mb-12">
+            <span className="w-1.5 h-1.5 bg-emerald-500 rounded-full" />
+            Available for new clients
+            <span className="text-gray-300 mx-1">·</span>
+            Remote · Worldwide
           </div>
 
-          <h1 className="text-5xl sm:text-6xl md:text-7xl font-extrabold leading-[1.04] tracking-tight max-w-4xl">
-            Your startup ships fast.<br />
-            <span className="text-cyan-400">Does your QA?</span>
+          {/* Headline — dramatic, full weight */}
+          <h1 className="text-[clamp(3rem,8vw,7rem)] font-black leading-[0.95] tracking-[-0.03em] max-w-5xl">
+            Your startup<br />
+            ships fast.<br />
+            <span className="text-gray-300">Does your QA?</span>
           </h1>
 
-          <p className="mt-7 text-lg md:text-xl text-gray-400 max-w-2xl leading-relaxed">
-            I help early-stage engineering teams build Playwright automation, CI/CD pipelines, and AI-powered QA — so you stop finding bugs in production and start deploying with confidence.
+          {/* Subtext — narrow, grounded */}
+          <p className="mt-10 text-lg text-gray-500 max-w-md leading-relaxed font-normal">
+            I build Playwright automation, CI/CD pipelines, and AI-powered QA for early-stage teams — so bugs stop reaching production.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 mt-10">
+          {/* CTAs */}
+          <div className="flex flex-wrap gap-4 mt-10">
             <a href="https://calendly.com/kraubin192/30min" target="_blank" rel="noopener noreferrer">
-              <button className="bg-cyan-500 hover:bg-cyan-400 active:scale-95 text-black px-8 py-4 rounded-xl font-bold text-base transition-all duration-150">
-                Book Free 30-Min Audit →
+              <button className="bg-[#0a0a0a] hover:bg-[#222] text-white px-7 py-3.5 rounded-xl font-semibold text-sm transition-colors">
+                Book free 30-min audit →
               </button>
             </a>
             <a href="#cases">
-              <button className="border border-white/10 hover:border-white/20 hover:bg-white/[0.04] text-gray-300 hover:text-white px-8 py-4 rounded-xl font-semibold text-base transition-all duration-150">
-                See Case Studies
+              <button className="text-sm font-semibold text-gray-500 hover:text-black px-7 py-3.5 rounded-xl border border-gray-200 hover:border-gray-400 transition-colors">
+                See case studies
               </button>
             </a>
           </div>
 
-          {/* Stats — only real, verifiable numbers */}
-          <div className="mt-16 pt-10 border-t border-white/[0.06] grid grid-cols-2 md:grid-cols-4 gap-8">
-            {[
-              { val: "7+",    label: "Years in QA Automation" },
-              { val: "4",     label: "Free audit spots / month" },
-              { val: "2 wk",  label: "Fastest engagement start" },
-              { val: "Free",  label: "Audit, zero commitment" },
-            ].map((s) => (
-              <div key={s.label}>
-                <div className="text-3xl font-extrabold text-white">{s.val}</div>
-                <div className="text-sm text-gray-500 mt-1 leading-snug">{s.label}</div>
-              </div>
-            ))}
+          {/* Bottom strip — credentials, not stats */}
+          <div className="mt-24 pt-8 border-t border-black/[0.07] flex flex-wrap gap-x-10 gap-y-4 text-sm text-gray-400">
+            <span>7+ years QA Automation</span>
+            <span className="text-gray-200">·</span>
+            <span>Playwright · Selenium · REST Assured</span>
+            <span className="text-gray-200">·</span>
+            <span>Docker · Kubernetes · AWS</span>
+            <span className="text-gray-200">·</span>
+            <span>GitHub Actions · Jenkins</span>
           </div>
         </div>
       </section>
+
+      {/* ── Divider ────────────────────────────────────── */}
+      <div className="max-w-6xl mx-auto px-6">
+        <div className="border-t border-black/[0.07]" />
+      </div>
 
       {/* ── Services ───────────────────────────────────── */}
-      <section id="services" className="max-w-6xl mx-auto px-6 py-20">
-        <div className="mb-12">
-          <p className="text-cyan-400 text-xs font-bold uppercase tracking-[0.15em] mb-3">Services</p>
-          <h2 className="text-3xl md:text-4xl font-extrabold">Three things. Done properly.</h2>
-        </div>
-
-        <div className="grid md:grid-cols-3 gap-6">
-          {services.map((s) => (
-            <div
-              key={s.title}
-              className="group bg-white/[0.03] border border-white/[0.07] hover:border-cyan-500/40 rounded-2xl p-8 transition-all duration-200 hover:bg-white/[0.055] flex flex-col"
-            >
-              <div className="text-cyan-400 mb-6 w-10 h-10 flex items-center justify-center bg-cyan-500/10 rounded-xl">
-                {s.svg}
-              </div>
-              <h3 className="text-xl font-bold">{s.title}</h3>
-              <p className="text-cyan-400 text-sm font-medium mt-2">{s.tagline}</p>
-              <p className="text-gray-400 text-sm mt-4 leading-relaxed flex-1">{s.body}</p>
-              <div className="flex flex-wrap gap-2 mt-6">
-                {s.pills.map((p) => (
-                  <span key={p} className="text-xs bg-white/[0.06] border border-white/[0.08] text-gray-400 px-3 py-1 rounded-full">
-                    {p}
-                  </span>
-                ))}
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* ── Case Studies ───────────────────────────────── */}
-      <section id="cases" className="max-w-6xl mx-auto px-6 py-20">
-        <div className="mb-12">
-          <p className="text-cyan-400 text-xs font-bold uppercase tracking-[0.15em] mb-3">Case Studies</p>
-          <h2 className="text-3xl md:text-4xl font-extrabold">Real work. Real results.</h2>
-          <p className="text-gray-600 text-sm mt-2">Client names withheld under NDA. Results are real.</p>
-        </div>
-
-        <div className="grid md:grid-cols-2 gap-8">
-          {caseStudies.map((c) => (
-            <div
-              key={c.title}
-              className="bg-white/[0.03] border border-white/[0.07] hover:border-cyan-500/30 rounded-2xl p-8 transition-all duration-200 flex flex-col gap-6"
-            >
-              <div>
-                <span className="inline-block text-xs font-semibold text-cyan-400 bg-cyan-500/10 border border-cyan-500/20 px-3 py-1 rounded-full">
-                  {c.tag}
-                </span>
-                <h3 className="text-xl font-bold mt-5 leading-snug">{c.title}</h3>
-              </div>
-              <div className="space-y-4">
-                <div>
-                  <p className="text-[11px] font-bold text-gray-600 uppercase tracking-widest mb-1.5">Problem</p>
-                  <p className="text-gray-400 text-sm leading-relaxed">{c.problem}</p>
-                </div>
-                <div>
-                  <p className="text-[11px] font-bold text-gray-600 uppercase tracking-widest mb-1.5">Solution</p>
-                  <p className="text-gray-400 text-sm leading-relaxed">{c.solution}</p>
-                </div>
-              </div>
-              <div className="mt-auto border border-cyan-500/20 bg-cyan-500/[0.06] rounded-xl p-5 flex flex-col gap-3">
-                <div className="text-2xl font-extrabold text-cyan-400 leading-none">{c.metric}</div>
-                <p className="text-sm text-gray-300 leading-snug">{c.result}</p>
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* ── How It Works ───────────────────────────────── */}
-      <section id="how" className="max-w-6xl mx-auto px-6 py-20">
-        <div className="mb-12">
-          <p className="text-cyan-400 text-xs font-bold uppercase tracking-[0.15em] mb-3">Process</p>
-          <h2 className="text-3xl md:text-4xl font-extrabold">How it works</h2>
-        </div>
-        <div className="grid md:grid-cols-3 gap-6">
-          {steps.map((step) => (
-            <div key={step.n} className="bg-white/[0.02] border border-white/[0.06] rounded-2xl p-8">
-              <div className="text-5xl font-black text-cyan-400/25 leading-none mb-5 select-none">{step.n}</div>
-              <h3 className="text-lg font-bold">{step.title}</h3>
-              <p className="text-gray-400 text-sm mt-3 leading-relaxed">{step.desc}</p>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* ── Free QA Audit ──────────────────────────────── */}
-      <section className="max-w-6xl mx-auto px-6 py-10">
-        <div className="relative border border-cyan-500/30 bg-cyan-500/[0.03] rounded-3xl p-10 md:p-14 overflow-hidden">
-          <div
-            aria-hidden
-            className="pointer-events-none absolute -top-40 -right-40 w-96 h-96 rounded-full opacity-[0.06]"
-            style={{ background: "radial-gradient(circle, #22d3ee, transparent 70%)" }}
-          />
-          <div className="relative max-w-3xl">
-            <p className="text-cyan-400 text-xs font-bold uppercase tracking-[0.15em] mb-4">Limited — 4 Spots / Month</p>
-            <h2 className="text-3xl md:text-4xl font-extrabold">Free QA Audit</h2>
-            <p className="text-gray-400 mt-4 text-base leading-relaxed max-w-2xl">
-              I limit this to 4 calls a month so I can give it proper attention. In 30 minutes I'll tell you exactly what's broken in your QA process and what to fix first — no upsell, no fluff.
+      <section id="services" className="max-w-6xl mx-auto px-6 py-28">
+        <div className="grid md:grid-cols-12 gap-16">
+          {/* Left label */}
+          <div className="md:col-span-3">
+            <p className="text-xs font-bold uppercase tracking-[0.15em] text-gray-400 sticky top-24">
+              What I do
             </p>
           </div>
-          <div className="relative grid md:grid-cols-2 gap-x-12 gap-y-4 mt-10">
-            {auditItems.map((item) => (
-              <div key={item} className="flex items-start gap-3">
-                <svg className="text-cyan-400 mt-0.5 shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                  <polyline points="20 6 9 17 4 12" />
-                </svg>
-                <span className="text-gray-300 text-sm leading-relaxed">{item}</span>
+          {/* Right content */}
+          <div className="md:col-span-9 space-y-0">
+            {[
+              {
+                num: "01",
+                title: "QA Automation",
+                body: "Most startups I talk to are manually testing before every release. That's not a process — that's a prayer. I build Playwright and Selenium suites that run in CI, catch regressions before they reach users, and give your team real confidence to ship.",
+                pills: ["Playwright", "Selenium", "REST Assured", "Allure", "GitHub Actions"],
+              },
+              {
+                num: "02",
+                title: "DevOps & CI/CD",
+                body: "If your deploys feel scary, the problem isn't your engineers — it's your pipeline. I set up Docker, Kubernetes, and GitHub Actions with automated quality gates so every deploy is validated, rollback-ready, and boring. Boring deploys are good deploys.",
+                pills: ["GitHub Actions", "Docker", "Kubernetes", "AWS", "Jenkins"],
+              },
+              {
+                num: "03",
+                title: "AI-Powered QA",
+                body: "LLMs are genuinely useful for QA. Self-healing locators, AI-generated test cases from specs, failure analysis without the manual digging. I integrate these into your workflow so your team spends time on what matters, not on maintenance.",
+                pills: ["Claude API", "Self-Healing Locators", "NLP → Tests", "Failure Analysis"],
+              },
+            ].map((s, i, arr) => (
+              <div
+                key={s.num}
+                className={`py-12 ${i < arr.length - 1 ? "border-b border-black/[0.07]" : ""}`}
+              >
+                <div className="flex gap-6 items-start">
+                  <span className="text-xs text-gray-300 font-mono mt-1 shrink-0">{s.num}</span>
+                  <div className="flex-1">
+                    <h3 className="text-2xl font-bold tracking-tight">{s.title}</h3>
+                    <p className="text-gray-500 mt-4 leading-relaxed text-base max-w-2xl">{s.body}</p>
+                    <div className="flex flex-wrap gap-2 mt-6">
+                      {s.pills.map((p) => (
+                        <span key={p} className="text-xs text-gray-500 border border-gray-200 px-3 py-1 rounded-full">
+                          {p}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                </div>
               </div>
             ))}
           </div>
-          <div className="relative mt-10">
-            <a href="https://calendly.com/kraubin192/30min" target="_blank" rel="noopener noreferrer">
-              <button className="bg-cyan-500 hover:bg-cyan-400 active:scale-95 text-black px-8 py-4 rounded-xl font-bold transition-all duration-150">
-                Claim Your Free Audit →
-              </button>
-            </a>
-            <p className="text-gray-600 text-xs mt-3">No sales pitch. Just an honest conversation about your QA.</p>
+        </div>
+      </section>
+
+      {/* ── Divider ────────────────────────────────────── */}
+      <div className="max-w-6xl mx-auto px-6">
+        <div className="border-t border-black/[0.07]" />
+      </div>
+
+      {/* ── Case Studies ───────────────────────────────── */}
+      <section id="cases" className="max-w-6xl mx-auto px-6 py-28">
+        <div className="grid md:grid-cols-12 gap-16">
+          <div className="md:col-span-3">
+            <p className="text-xs font-bold uppercase tracking-[0.15em] text-gray-400 sticky top-24">
+              Case studies
+              <span className="block mt-2 font-normal normal-case tracking-normal text-gray-300">
+                Names under NDA.
+                Results are real.
+              </span>
+            </p>
+          </div>
+          <div className="md:col-span-9 space-y-16">
+            {[
+              {
+                tag: "QA Automation",
+                title: "From 3-day regression cycles to 4-hour deploys",
+                problem: "A 6-person SaaS team was manually testing 200+ user flows before every release. Bugs still slipped through. The founder called me after a production incident that cost them a key client.",
+                solution: "Built a full Playwright E2E suite + REST API automation layer into GitHub Actions. Parallel execution, Allure reporting, coverage from 20% to 85%.",
+                result: "Release cycle: 3 days → 4 hours. Zero critical regressions in 3 months after launch.",
+                metric: "3d → 4h",
+              },
+              {
+                tag: "DevOps & CI/CD",
+                title: "Zero-downtime deploys for a fast-moving fintech",
+                problem: "Deployments over SSH, no staging, no rollback plan. Every deploy was a coin flip. The team had stopped shipping features because they were afraid to deploy.",
+                solution: "Docker + Kubernetes on AWS, GitHub Actions pipelines with automated smoke tests as quality gates, blue-green deployment strategy.",
+                result: "Multiple reliable deploys per week. Zero production incidents in 2 months after go-live.",
+                metric: "0 incidents",
+              },
+            ].map((c, i) => (
+              <div key={c.title} className={i > 0 ? "pt-16 border-t border-black/[0.07]" : ""}>
+                <span className="text-xs font-semibold text-cyan-500 uppercase tracking-widest">{c.tag}</span>
+                <h3 className="text-2xl md:text-3xl font-bold tracking-tight mt-3 max-w-2xl leading-snug">{c.title}</h3>
+
+                <div className="mt-8 grid md:grid-cols-2 gap-8">
+                  <div>
+                    <p className="text-[11px] font-bold text-gray-300 uppercase tracking-widest mb-2">Problem</p>
+                    <p className="text-gray-500 text-sm leading-relaxed">{c.problem}</p>
+                  </div>
+                  <div>
+                    <p className="text-[11px] font-bold text-gray-300 uppercase tracking-widest mb-2">Solution</p>
+                    <p className="text-gray-500 text-sm leading-relaxed">{c.solution}</p>
+                  </div>
+                </div>
+
+                <div className="mt-8 flex items-center gap-6">
+                  <span className="text-4xl font-black tracking-tight text-[#0a0a0a]">{c.metric}</span>
+                  <span className="text-sm text-gray-400 max-w-xs leading-snug">{c.result}</span>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* ── About / Founder ────────────────────────────── */}
-      <section id="about" className="max-w-6xl mx-auto px-6 py-24">
-        <div className="grid md:grid-cols-2 gap-16 items-center">
-          <div className="order-2 md:order-1">
-            <p className="text-cyan-400 text-xs font-bold uppercase tracking-[0.15em] mb-5">The person behind this</p>
-            <h2 className="text-3xl md:text-4xl font-extrabold">Raubin Kumar</h2>
-            <p className="text-gray-400 text-base mt-6 leading-relaxed">
-              I'm a QA Automation Engineer with 7+ years of experience building testing infrastructure for software teams. I've worked across fintech, SaaS, and enterprise products — from Playwright E2E suites to full CI/CD pipelines and AI-enhanced QA workflows.
-            </p>
-            <p className="text-gray-400 text-base mt-4 leading-relaxed">
-              I started SecureLaunch because most early-stage startups treat QA as an afterthought — until a production incident costs them a client. I fix that, before it happens.
-            </p>
-            <p className="text-gray-400 text-base mt-4 leading-relaxed">
-              When you book a call with me, you talk to me. Not an account manager. Not a junior dev. Me.
-            </p>
-            <div className="flex gap-5 mt-8">
-              <a href="https://www.linkedin.com/in/raubink/" target="_blank" rel="noopener noreferrer"
-                className="text-sm text-cyan-400 hover:text-cyan-300 font-semibold transition-colors duration-150">
-                LinkedIn ↗
-              </a>
-              <a href="https://github.com/kraubin" target="_blank" rel="noopener noreferrer"
-                className="text-sm text-cyan-400 hover:text-cyan-300 font-semibold transition-colors duration-150">
-                GitHub ↗
-              </a>
-            </div>
-          </div>
+      {/* ── Divider ────────────────────────────────────── */}
+      <div className="max-w-6xl mx-auto px-6">
+        <div className="border-t border-black/[0.07]" />
+      </div>
 
-          <div className="order-1 md:order-2 flex justify-center md:justify-end">
-            {/* White/light bg behind photo so face is clearly visible */}
-            <div className="relative rounded-2xl overflow-hidden w-full max-w-sm aspect-square bg-slate-800">
-              <Image
-                src="/raubin.jpg"
-                alt="Raubin Kumar — Founder, SecureLaunch"
-                fill
-                className="object-cover object-center"
-                priority
-              />
-              {/* Subtle cyan gradient overlay at bottom */}
-              <div
-                className="absolute bottom-0 left-0 right-0 h-1/4"
-                style={{ background: "linear-gradient(to top, rgba(8,12,20,0.6), transparent)" }}
-              />
+      {/* ── How It Works ───────────────────────────────── */}
+      <section className="max-w-6xl mx-auto px-6 py-28">
+        <div className="grid md:grid-cols-12 gap-16">
+          <div className="md:col-span-3">
+            <p className="text-xs font-bold uppercase tracking-[0.15em] text-gray-400 sticky top-24">
+              How it works
+            </p>
+          </div>
+          <div className="md:col-span-9">
+            <div className="grid md:grid-cols-3 gap-12">
+              {[
+                { n: "1", title: "Free audit call", desc: "30 minutes. I look at your current setup honestly — no pitch, no upsell. You'll leave with clarity on where your biggest risks are, whether or not we work together." },
+                { n: "2", title: "Written roadmap", desc: "A prioritized action plan delivered in writing. What to automate first, which tools fit your stack, realistic timelines. Yours to keep regardless." },
+                { n: "3", title: "I build it", desc: "I execute directly — no junior devs, no handoffs. The same person who reviewed your setup and designed the strategy is the one who builds it." },
+              ].map((s) => (
+                <div key={s.n}>
+                  <span className="text-xs font-mono text-gray-300">{s.n}</span>
+                  <h3 className="text-lg font-bold mt-3">{s.title}</h3>
+                  <p className="text-gray-500 text-sm mt-3 leading-relaxed">{s.desc}</p>
+                </div>
+              ))}
             </div>
           </div>
         </div>
       </section>
+
+      {/* ── Free QA Audit — full bleed dark section ────── */}
+      <section className="bg-[#0a0a0a] text-white py-28">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="grid md:grid-cols-12 gap-16">
+            <div className="md:col-span-3">
+              <p className="text-xs font-bold uppercase tracking-[0.15em] text-gray-500 sticky top-24">
+                Free audit
+                <span className="block mt-2 text-gray-600 font-normal normal-case tracking-normal">
+                  4 spots / month
+                </span>
+              </p>
+            </div>
+            <div className="md:col-span-9">
+              <h2 className="text-4xl md:text-5xl font-black tracking-tight leading-tight max-w-2xl">
+                Not sure where your QA stands?
+                <br />
+                <span className="text-gray-500">Let's find out in 30 minutes.</span>
+              </h2>
+              <p className="text-gray-400 mt-8 max-w-xl leading-relaxed">
+                I take 4 of these a month — enough to give it real attention. No pitch at the end. Just an honest assessment of where your testing process is failing and what to fix first.
+              </p>
+
+              <div className="grid md:grid-cols-2 gap-x-12 gap-y-3 mt-12">
+                {[
+                  "Review your current QA and release process",
+                  "Identify the highest-risk automation gaps",
+                  "CI/CD pipeline health check",
+                  "Playwright vs Selenium recommendation",
+                  "AI-powered QA opportunities",
+                  "30-min call + written summary after",
+                ].map((item) => (
+                  <div key={item} className="flex items-start gap-3 text-sm text-gray-400">
+                    <span className="text-cyan-500 mt-0.5 shrink-0">—</span>
+                    {item}
+                  </div>
+                ))}
+              </div>
+
+              <div className="mt-12">
+                <a href="https://calendly.com/kraubin192/30min" target="_blank" rel="noopener noreferrer">
+                  <button className="bg-white hover:bg-gray-100 text-black px-8 py-4 rounded-xl font-bold text-sm transition-colors">
+                    Claim your free audit →
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── About ──────────────────────────────────────── */}
+      <section id="about" className="max-w-6xl mx-auto px-6 py-28">
+        <div className="grid md:grid-cols-12 gap-16 items-start">
+          <div className="md:col-span-3">
+            <p className="text-xs font-bold uppercase tracking-[0.15em] text-gray-400 sticky top-24">
+              About
+            </p>
+          </div>
+          <div className="md:col-span-9">
+            <div className="grid md:grid-cols-2 gap-16 items-center">
+              <div>
+                <h2 className="text-3xl md:text-4xl font-black tracking-tight">Raubin Kumar</h2>
+                <p className="text-gray-500 mt-6 leading-relaxed">
+                  I've spent 7+ years building testing infrastructure for software teams — fintech, SaaS, enterprise. I've seen what happens when QA is an afterthought. A production incident, a lost client, a team that's afraid to deploy on Fridays.
+                </p>
+                <p className="text-gray-500 mt-4 leading-relaxed">
+                  I started SecureLaunch to fix that for early-stage startups before it becomes a crisis, not after.
+                </p>
+                <p className="text-gray-500 mt-4 leading-relaxed">
+                  When you book a call, you talk to me. Not an account manager. Not a junior dev. Me — the same person who'll design and build your solution.
+                </p>
+                <div className="flex gap-6 mt-8">
+                  <a href="https://www.linkedin.com/in/raubink/" target="_blank" rel="noopener noreferrer"
+                    className="text-sm font-semibold text-[#0a0a0a] hover:text-cyan-500 transition-colors">
+                    LinkedIn ↗
+                  </a>
+                  <a href="https://github.com/kraubin" target="_blank" rel="noopener noreferrer"
+                    className="text-sm font-semibold text-[#0a0a0a] hover:text-cyan-500 transition-colors">
+                    GitHub ↗
+                  </a>
+                </div>
+              </div>
+              <div className="relative rounded-2xl overflow-hidden aspect-square bg-gray-100">
+                <Image
+                  src="/raubin.jpg"
+                  alt="Raubin Kumar — Founder, SecureLaunch"
+                  fill
+                  className="object-cover object-top"
+                  priority
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── Divider ────────────────────────────────────── */}
+      <div className="max-w-6xl mx-auto px-6">
+        <div className="border-t border-black/[0.07]" />
+      </div>
 
       {/* ── FAQ ────────────────────────────────────────── */}
-      <section className="max-w-6xl mx-auto px-6 py-20">
-        <div className="mb-12">
-          <p className="text-cyan-400 text-xs font-bold uppercase tracking-[0.15em] mb-3">FAQ</p>
-          <h2 className="text-3xl md:text-4xl font-extrabold">Honest answers to real questions</h2>
-        </div>
-        <div className="grid md:grid-cols-2 gap-6">
-          {faqs.map((faq) => (
-            <div key={faq.q} className="bg-white/[0.02] border border-white/[0.06] rounded-2xl p-7">
-              <h3 className="font-bold text-white text-base">{faq.q}</h3>
-              <p className="text-gray-400 text-sm mt-3 leading-relaxed">{faq.a}</p>
-            </div>
-          ))}
+      <section className="max-w-6xl mx-auto px-6 py-28">
+        <div className="grid md:grid-cols-12 gap-16">
+          <div className="md:col-span-3">
+            <p className="text-xs font-bold uppercase tracking-[0.15em] text-gray-400 sticky top-24">
+              FAQ
+            </p>
+          </div>
+          <div className="md:col-span-9 space-y-0">
+            {[
+              {
+                q: "Are you a team or a solo consultant?",
+                a: "Solo. You work directly with me — Raubin Kumar. No account managers, no handoffs to junior devs. That's the whole point.",
+              },
+              {
+                q: "Why hire you instead of an Upwork freelancer?",
+                a: "I don't write test scripts — I design QA systems. There's a real difference. After 7+ years doing this across fintech, SaaS, and enterprise products, I know what breaks before it breaks.",
+              },
+              {
+                q: "Do you work with non-Indian startups?",
+                a: "Yes. Everything is remote. I work with teams across India, Southeast Asia, and Europe.",
+              },
+              {
+                q: "What's the smallest engagement?",
+                a: "The free audit is zero commitment. From there, the smallest paid engagement is a focused 2-week sprint.",
+              },
+            ].map((faq, i, arr) => (
+              <div
+                key={faq.q}
+                className={`py-8 ${i < arr.length - 1 ? "border-b border-black/[0.07]" : ""}`}
+              >
+                <h3 className="font-bold text-base text-[#0a0a0a]">{faq.q}</h3>
+                <p className="text-gray-500 text-sm mt-3 leading-relaxed max-w-2xl">{faq.a}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
-      {/* ── Contact ────────────────────────────────────── */}
-      <section id="contact" className="max-w-6xl mx-auto px-6 py-24">
-        <div className="relative bg-white/[0.03] border border-white/[0.08] rounded-3xl p-10 md:p-16 text-center overflow-hidden">
-          <div
-            aria-hidden
-            className="pointer-events-none absolute inset-0"
-            style={{ background: "radial-gradient(ellipse at 50% 120%, rgba(34,211,238,0.07), transparent 60%)" }}
-          />
-          <div className="relative">
-            <h2 className="text-4xl md:text-5xl font-extrabold max-w-2xl mx-auto leading-tight">
-              Stop guessing about your QA.
-            </h2>
-            <p className="text-gray-400 text-lg mt-6 max-w-xl mx-auto leading-relaxed">
-              Book a free 30-minute audit. I'll review your setup and tell you exactly what I'd fix first — no strings attached.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center mt-10">
-              <a href="https://calendly.com/kraubin192/30min" target="_blank" rel="noopener noreferrer">
-                <button className="bg-cyan-500 hover:bg-cyan-400 active:scale-95 text-black px-9 py-4 rounded-xl font-bold text-base transition-all duration-150">
-                  Book a Slot →
-                </button>
-              </a>
-              <a href="mailto:hello@securelaunch.co.in">
-                <button className="border border-white/10 hover:border-white/20 hover:bg-white/[0.04] text-gray-300 hover:text-white px-9 py-4 rounded-xl font-semibold text-base transition-all duration-150">
-                  Email Me
-                </button>
-              </a>
-              <a href="https://wa.me/919845857619" target="_blank" rel="noopener noreferrer">
-                <button className="border border-white/10 hover:border-white/20 hover:bg-white/[0.04] text-gray-300 hover:text-white px-9 py-4 rounded-xl font-semibold text-base transition-all duration-150">
-                  WhatsApp →
-                </button>
-              </a>
+      {/* ── Contact — full bleed ───────────────────────── */}
+      <section id="contact" className="border-t border-black/[0.07]">
+        <div className="max-w-6xl mx-auto px-6 py-28">
+          <div className="grid md:grid-cols-12 gap-16 items-end">
+            <div className="md:col-span-8">
+              <h2 className="text-5xl md:text-7xl font-black tracking-tight leading-[0.95]">
+                Let's talk<br />
+                about your<br />
+                <span className="text-gray-300">QA.</span>
+              </h2>
+              <p className="text-gray-500 mt-8 max-w-lg leading-relaxed">
+                Book a free 30-minute audit. I'll review your current setup and tell you exactly what I'd fix first — no strings attached.
+              </p>
+              <div className="flex flex-wrap gap-4 mt-10">
+                <a href="https://calendly.com/kraubin192/30min" target="_blank" rel="noopener noreferrer">
+                  <button className="bg-[#0a0a0a] hover:bg-[#222] text-white px-8 py-4 rounded-xl font-bold text-sm transition-colors">
+                    Book a slot →
+                  </button>
+                </a>
+                <a href="mailto:hello@securelaunch.co.in">
+                  <button className="border border-gray-200 hover:border-gray-400 text-gray-600 hover:text-black px-8 py-4 rounded-xl font-semibold text-sm transition-colors">
+                    Email me
+                  </button>
+                </a>
+                <a href="https://wa.me/919845857619" target="_blank" rel="noopener noreferrer">
+                  <button className="border border-gray-200 hover:border-gray-400 text-gray-600 hover:text-black px-8 py-4 rounded-xl font-semibold text-sm transition-colors">
+                    WhatsApp →
+                  </button>
+                </a>
+              </div>
             </div>
-            <p className="text-gray-500 text-sm mt-10">
-              hello@securelaunch.co.in · Remote · Available Worldwide
-            </p>
+            <div className="md:col-span-4 text-sm text-gray-400 space-y-2 md:text-right">
+              <p>hello@securelaunch.co.in</p>
+              <p>Remote · Available Worldwide</p>
+            </div>
           </div>
         </div>
       </section>
 
       {/* ── Mobile Sticky CTA ──────────────────────────── */}
-      <div className="fixed bottom-0 left-0 right-0 z-50 md:hidden border-t border-white/[0.08] bg-[#080C14]/98 backdrop-blur-xl px-5 py-4 pb-safe">
-        <a href="https://calendly.com/kraubin192/30min" target="_blank" rel="noopener noreferrer" className="block w-full">
-          <button className="w-full bg-cyan-500 hover:bg-cyan-400 active:scale-95 text-black py-4 rounded-xl font-bold text-base transition-all duration-150">
+      <div className="fixed bottom-0 left-0 right-0 z-50 md:hidden bg-white/95 backdrop-blur border-t border-black/[0.08] px-5 py-4">
+        <a href="https://calendly.com/kraubin192/30min" target="_blank" rel="noopener noreferrer" className="block">
+          <button className="w-full bg-[#0a0a0a] text-white py-3.5 rounded-xl font-bold text-sm">
             Book Free Audit →
           </button>
         </a>
       </div>
 
       {/* ── Footer ─────────────────────────────────────── */}
-      <footer className="border-t border-white/[0.05] py-8 text-center text-gray-600 text-sm mb-20 md:mb-0">
-        <p>© {new Date().getFullYear()} SecureLaunch · Raubin Kumar</p>
-        <p className="mt-1">QA Automation · DevOps & CI/CD · AI-Powered QA</p>
+      <footer className="border-t border-black/[0.07] py-8 mb-16 md:mb-0">
+        <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-400">
+          <span>© {new Date().getFullYear()} SecureLaunch · Raubin Kumar</span>
+          <span>QA Automation · DevOps & CI/CD · AI-Powered QA</span>
+        </div>
       </footer>
 
     </main>
