@@ -14,7 +14,7 @@ export default function Home() {
       body: "Playwright, Selenium, API automation — built into your CI pipeline with parallel execution, real reporting, and coverage that actually matters.",
       pills: ["Playwright", "Selenium", "REST Assured", "Allure Reports"],
       svg: (
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
           <path d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2v-4M9 21H5a2 2 0 0 1-2-2v-4m0 0h18" />
         </svg>
       ),
@@ -25,7 +25,7 @@ export default function Home() {
       body: "GitHub Actions, Docker, Kubernetes. Automated quality gates so every deploy is validated before it touches production.",
       pills: ["GitHub Actions", "Docker", "Kubernetes", "AWS"],
       svg: (
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
           <circle cx="12" cy="12" r="3" />
           <path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83" />
         </svg>
@@ -37,10 +37,9 @@ export default function Home() {
       body: "Self-healing locators, AI-generated test cases, LLM-powered failure analysis. Your team ships faster — the AI handles the repetitive QA work.",
       pills: ["Claude API", "Self-Healing", "NLP to Tests", "Failure Analysis"],
       svg: (
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-          <path d="M12 2a4 4 0 0 1 4 4v2a4 4 0 0 1-8 0V6a4 4 0 0 1 4-4z" />
-          <path d="M6 20v-2a6 6 0 0 1 12 0v2" />
-          <path d="M18 8h2a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2h-2" />
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+          <rect x="3" y="3" width="18" height="18" rx="2" />
+          <path d="M9 9h.01M15 9h.01M9 15h6" />
         </svg>
       ),
     },
@@ -50,20 +49,16 @@ export default function Home() {
     {
       tag: "QA Automation",
       title: "From 3-day regression cycles to 4-hour deploys",
-      problem:
-        "A 6-person SaaS team was manually testing 200+ user flows before every release. Bugs still slipped through. Founders were losing sleep before deploys.",
-      solution:
-        "Built a Playwright E2E suite + REST API automation layer, integrated into GitHub Actions with parallel execution and Allure reporting. Test coverage: 20% → 85%.",
+      problem: "A 6-person SaaS team was manually testing 200+ user flows before every release. Bugs still slipped through. Founders were losing sleep before deploys.",
+      solution: "Built a Playwright E2E suite + REST API automation layer, integrated into GitHub Actions with parallel execution and Allure reporting. Test coverage: 20% → 85%.",
       result: "Release cycle dropped from 3 days to 4 hours. Zero critical regressions in 3 months post-launch.",
       metric: "3 days → 4 hrs",
     },
     {
       tag: "DevOps & CI/CD",
       title: "Zero-downtime deploys for a fast-moving fintech",
-      problem:
-        "Deployments happened over SSH with no staging environment and no rollback plan. Every deploy was a gamble.",
-      solution:
-        "Docker + Kubernetes on AWS, GitHub Actions pipelines with automated smoke tests as quality gates, and a blue-green deployment strategy.",
+      problem: "Deployments happened over SSH with no staging environment and no rollback plan. Every deploy was a gamble.",
+      solution: "Docker + Kubernetes on AWS, GitHub Actions pipelines with automated smoke tests as quality gates, and a blue-green deployment strategy.",
       result: "Multiple reliable deploys per week. Zero production incidents in 2 months after go-live.",
       metric: "0 incidents",
     },
@@ -115,23 +110,16 @@ export default function Home() {
     "30-min call + written summary delivered after",
   ];
 
-  const stats = [
-    { val: "7+",   label: "Years in QA Automation" },
-    { val: "85%",  label: "Avg test coverage achieved" },
-    { val: "4",    label: "Free audit spots / month" },
-    { val: "2wk",  label: "Fastest engagement start" },
-  ];
-
   return (
     <main className="min-h-screen bg-[#080C14] text-white font-sans antialiased overflow-x-hidden">
 
       {/* ── Sticky Nav ─────────────────────────────────── */}
-      <nav className="fixed top-0 left-0 right-0 z-50 border-b border-white/[0.06] bg-[#080C14]/90 backdrop-blur-xl">
+      <nav className="fixed top-0 left-0 right-0 z-50 border-b border-white/[0.08] bg-[#080C14] backdrop-blur-xl">
         <div className="max-w-6xl mx-auto px-6 h-16 flex justify-between items-center">
           <a href="/" className="text-xl font-bold tracking-tight">
             Secure<span className="text-cyan-400">Launch</span>
           </a>
-          <div className="hidden md:flex items-center gap-7 text-sm text-gray-400">
+          <div className="hidden md:flex items-center gap-8 text-sm text-gray-400">
             <a href="#services" className="hover:text-white transition-colors duration-150">Services</a>
             <a href="#cases"    className="hover:text-white transition-colors duration-150">Work</a>
             <a href="#about"    className="hover:text-white transition-colors duration-150">About</a>
@@ -139,7 +127,7 @@ export default function Home() {
               href="https://calendly.com/kraubin192/30min"
               target="_blank"
               rel="noopener noreferrer"
-              className="ml-2 bg-cyan-500 hover:bg-cyan-400 active:scale-95 text-black text-sm font-bold px-6 py-2.5 rounded-lg transition-all duration-150"
+              className="ml-3 bg-cyan-500 hover:bg-cyan-400 active:scale-95 text-black text-sm font-bold px-6 py-2.5 rounded-lg transition-all duration-150"
             >
               Book Free Audit
             </a>
@@ -156,10 +144,11 @@ export default function Home() {
       </nav>
 
       {/* ── Hero ───────────────────────────────────────── */}
-      <section className="relative max-w-6xl mx-auto px-6 pt-32 pb-24">
+      {/* pt-24 = 96px which is exactly nav height (64px) + breathing room */}
+      <section className="relative max-w-6xl mx-auto px-6 pt-36 pb-24">
         <div
           aria-hidden
-          className="pointer-events-none absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[400px] rounded-full opacity-[0.10]"
+          className="pointer-events-none absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[350px] rounded-full opacity-[0.08]"
           style={{ background: "radial-gradient(ellipse at center, #22d3ee 0%, transparent 70%)" }}
         />
 
@@ -179,11 +168,7 @@ export default function Home() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 mt-10">
-            <a
-              href="https://calendly.com/kraubin192/30min"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <a href="https://calendly.com/kraubin192/30min" target="_blank" rel="noopener noreferrer">
               <button className="bg-cyan-500 hover:bg-cyan-400 active:scale-95 text-black px-8 py-4 rounded-xl font-bold text-base transition-all duration-150">
                 Book Free 30-Min Audit →
               </button>
@@ -195,9 +180,14 @@ export default function Home() {
             </a>
           </div>
 
-          {/* Stats row — real numbers */}
+          {/* Stats — only real, verifiable numbers */}
           <div className="mt-16 pt-10 border-t border-white/[0.06] grid grid-cols-2 md:grid-cols-4 gap-8">
-            {stats.map((s) => (
+            {[
+              { val: "7+",    label: "Years in QA Automation" },
+              { val: "4",     label: "Free audit spots / month" },
+              { val: "2 wk",  label: "Fastest engagement start" },
+              { val: "Free",  label: "Audit, zero commitment" },
+            ].map((s) => (
               <div key={s.label}>
                 <div className="text-3xl font-extrabold text-white">{s.val}</div>
                 <div className="text-sm text-gray-500 mt-1 leading-snug">{s.label}</div>
@@ -218,12 +208,14 @@ export default function Home() {
           {services.map((s) => (
             <div
               key={s.title}
-              className="group bg-white/[0.03] border border-white/[0.07] hover:border-cyan-500/40 rounded-2xl p-8 transition-all duration-200 hover:bg-white/[0.055]"
+              className="group bg-white/[0.03] border border-white/[0.07] hover:border-cyan-500/40 rounded-2xl p-8 transition-all duration-200 hover:bg-white/[0.055] flex flex-col"
             >
-              <div className="text-cyan-400 mb-6">{s.svg}</div>
+              <div className="text-cyan-400 mb-6 w-10 h-10 flex items-center justify-center bg-cyan-500/10 rounded-xl">
+                {s.svg}
+              </div>
               <h3 className="text-xl font-bold">{s.title}</h3>
               <p className="text-cyan-400 text-sm font-medium mt-2">{s.tagline}</p>
-              <p className="text-gray-400 text-sm mt-4 leading-relaxed">{s.body}</p>
+              <p className="text-gray-400 text-sm mt-4 leading-relaxed flex-1">{s.body}</p>
               <div className="flex flex-wrap gap-2 mt-6">
                 {s.pills.map((p) => (
                   <span key={p} className="text-xs bg-white/[0.06] border border-white/[0.08] text-gray-400 px-3 py-1 rounded-full">
@@ -251,12 +243,11 @@ export default function Home() {
               className="bg-white/[0.03] border border-white/[0.07] hover:border-cyan-500/30 rounded-2xl p-8 transition-all duration-200 flex flex-col gap-6"
             >
               <div>
-                <span className="text-xs font-semibold text-cyan-400 bg-cyan-500/10 border border-cyan-500/20 px-3 py-1 rounded-full">
+                <span className="inline-block text-xs font-semibold text-cyan-400 bg-cyan-500/10 border border-cyan-500/20 px-3 py-1 rounded-full">
                   {c.tag}
                 </span>
                 <h3 className="text-xl font-bold mt-5 leading-snug">{c.title}</h3>
               </div>
-
               <div className="space-y-4">
                 <div>
                   <p className="text-[11px] font-bold text-gray-600 uppercase tracking-widest mb-1.5">Problem</p>
@@ -267,9 +258,8 @@ export default function Home() {
                   <p className="text-gray-400 text-sm leading-relaxed">{c.solution}</p>
                 </div>
               </div>
-
-              <div className="mt-auto border border-cyan-500/20 bg-cyan-500/[0.06] rounded-xl p-5 flex items-center gap-5">
-                <div className="text-3xl font-extrabold text-cyan-400 shrink-0 leading-none">{c.metric}</div>
+              <div className="mt-auto border border-cyan-500/20 bg-cyan-500/[0.06] rounded-xl p-5 flex flex-col gap-3">
+                <div className="text-2xl font-extrabold text-cyan-400 leading-none">{c.metric}</div>
                 <p className="text-sm text-gray-300 leading-snug">{c.result}</p>
               </div>
             </div>
@@ -283,12 +273,11 @@ export default function Home() {
           <p className="text-cyan-400 text-xs font-bold uppercase tracking-[0.15em] mb-3">Process</p>
           <h2 className="text-3xl md:text-4xl font-extrabold">How it works</h2>
         </div>
-
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-3 gap-6">
           {steps.map((step) => (
             <div key={step.n} className="bg-white/[0.02] border border-white/[0.06] rounded-2xl p-8">
-              <div className="text-5xl font-black text-cyan-400/20 leading-none mb-5 select-none">{step.n}</div>
-              <h3 className="text-lg font-bold capitalize">{step.title}</h3>
+              <div className="text-5xl font-black text-cyan-400/25 leading-none mb-5 select-none">{step.n}</div>
+              <h3 className="text-lg font-bold">{step.title}</h3>
               <p className="text-gray-400 text-sm mt-3 leading-relaxed">{step.desc}</p>
             </div>
           ))}
@@ -297,13 +286,12 @@ export default function Home() {
 
       {/* ── Free QA Audit ──────────────────────────────── */}
       <section className="max-w-6xl mx-auto px-6 py-10">
-        <div className="relative border border-cyan-500/25 rounded-3xl p-10 md:p-14 overflow-hidden">
+        <div className="relative border border-cyan-500/30 bg-cyan-500/[0.03] rounded-3xl p-10 md:p-14 overflow-hidden">
           <div
             aria-hidden
-            className="pointer-events-none absolute -top-32 -right-32 w-80 h-80 rounded-full opacity-[0.07]"
+            className="pointer-events-none absolute -top-40 -right-40 w-96 h-96 rounded-full opacity-[0.06]"
             style={{ background: "radial-gradient(circle, #22d3ee, transparent 70%)" }}
           />
-
           <div className="relative max-w-3xl">
             <p className="text-cyan-400 text-xs font-bold uppercase tracking-[0.15em] mb-4">Limited — 4 Spots / Month</p>
             <h2 className="text-3xl md:text-4xl font-extrabold">Free QA Audit</h2>
@@ -311,7 +299,6 @@ export default function Home() {
               I limit this to 4 calls a month so I can give it proper attention. In 30 minutes I'll tell you exactly what's broken in your QA process and what to fix first — no upsell, no fluff.
             </p>
           </div>
-
           <div className="relative grid md:grid-cols-2 gap-x-12 gap-y-4 mt-10">
             {auditItems.map((item) => (
               <div key={item} className="flex items-start gap-3">
@@ -322,16 +309,13 @@ export default function Home() {
               </div>
             ))}
           </div>
-
-          <div className="relative mt-10 flex flex-col sm:flex-row gap-4 items-center">
+          <div className="relative mt-10">
             <a href="https://calendly.com/kraubin192/30min" target="_blank" rel="noopener noreferrer">
               <button className="bg-cyan-500 hover:bg-cyan-400 active:scale-95 text-black px-8 py-4 rounded-xl font-bold transition-all duration-150">
                 Claim Your Free Audit →
               </button>
             </a>
-            <p className="text-gray-600 text-xs leading-relaxed">
-              No sales pitch. Just an honest conversation about your QA.
-            </p>
+            <p className="text-gray-600 text-xs mt-3">No sales pitch. Just an honest conversation about your QA.</p>
           </div>
         </div>
       </section>
@@ -352,34 +336,33 @@ export default function Home() {
               When you book a call with me, you talk to me. Not an account manager. Not a junior dev. Me.
             </p>
             <div className="flex gap-5 mt-8">
-              <a
-                href="https://www.linkedin.com/in/raubink/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-sm text-cyan-400 hover:text-cyan-300 font-semibold transition-colors duration-150"
-              >
+              <a href="https://www.linkedin.com/in/raubink/" target="_blank" rel="noopener noreferrer"
+                className="text-sm text-cyan-400 hover:text-cyan-300 font-semibold transition-colors duration-150">
                 LinkedIn ↗
               </a>
-              <a
-                href="https://github.com/kraubin"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-sm text-cyan-400 hover:text-cyan-300 font-semibold transition-colors duration-150"
-              >
+              <a href="https://github.com/kraubin" target="_blank" rel="noopener noreferrer"
+                className="text-sm text-cyan-400 hover:text-cyan-300 font-semibold transition-colors duration-150">
                 GitHub ↗
               </a>
             </div>
           </div>
 
           <div className="order-1 md:order-2 flex justify-center md:justify-end">
-            <Image
-              src="/raubin.jpg"
-              alt="Raubin Kumar — Founder, SecureLaunch"
-              width={380}
-              height={380}
-              className="rounded-2xl border border-white/[0.08] object-cover object-top w-full max-w-sm aspect-square"
-              priority
-            />
+            {/* White/light bg behind photo so face is clearly visible */}
+            <div className="relative rounded-2xl overflow-hidden w-full max-w-sm aspect-square bg-slate-800">
+              <Image
+                src="/raubin.jpg"
+                alt="Raubin Kumar — Founder, SecureLaunch"
+                fill
+                className="object-cover object-center"
+                priority
+              />
+              {/* Subtle cyan gradient overlay at bottom */}
+              <div
+                className="absolute bottom-0 left-0 right-0 h-1/4"
+                style={{ background: "linear-gradient(to top, rgba(8,12,20,0.6), transparent)" }}
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -390,7 +373,6 @@ export default function Home() {
           <p className="text-cyan-400 text-xs font-bold uppercase tracking-[0.15em] mb-3">FAQ</p>
           <h2 className="text-3xl md:text-4xl font-extrabold">Honest answers to real questions</h2>
         </div>
-
         <div className="grid md:grid-cols-2 gap-6">
           {faqs.map((faq) => (
             <div key={faq.q} className="bg-white/[0.02] border border-white/[0.06] rounded-2xl p-7">
@@ -403,13 +385,12 @@ export default function Home() {
 
       {/* ── Contact ────────────────────────────────────── */}
       <section id="contact" className="max-w-6xl mx-auto px-6 py-24">
-        <div className="relative bg-white/[0.03] border border-white/[0.07] rounded-3xl p-10 md:p-16 text-center overflow-hidden">
+        <div className="relative bg-white/[0.03] border border-white/[0.08] rounded-3xl p-10 md:p-16 text-center overflow-hidden">
           <div
             aria-hidden
             className="pointer-events-none absolute inset-0"
-            style={{ background: "radial-gradient(ellipse at 50% 100%, rgba(34,211,238,0.06), transparent 60%)" }}
+            style={{ background: "radial-gradient(ellipse at 50% 120%, rgba(34,211,238,0.07), transparent 60%)" }}
           />
-
           <div className="relative">
             <h2 className="text-4xl md:text-5xl font-extrabold max-w-2xl mx-auto leading-tight">
               Stop guessing about your QA.
@@ -417,13 +398,8 @@ export default function Home() {
             <p className="text-gray-400 text-lg mt-6 max-w-xl mx-auto leading-relaxed">
               Book a free 30-minute audit. I'll review your setup and tell you exactly what I'd fix first — no strings attached.
             </p>
-
             <div className="flex flex-col sm:flex-row gap-4 justify-center mt-10">
-              <a
-                href="https://calendly.com/kraubin192/30min"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <a href="https://calendly.com/kraubin192/30min" target="_blank" rel="noopener noreferrer">
                 <button className="bg-cyan-500 hover:bg-cyan-400 active:scale-95 text-black px-9 py-4 rounded-xl font-bold text-base transition-all duration-150">
                   Book a Slot →
                 </button>
@@ -433,32 +409,22 @@ export default function Home() {
                   Email Me
                 </button>
               </a>
-              <a
-                href="https://wa.me/919845857619"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <a href="https://wa.me/919845857619" target="_blank" rel="noopener noreferrer">
                 <button className="border border-white/10 hover:border-white/20 hover:bg-white/[0.04] text-gray-300 hover:text-white px-9 py-4 rounded-xl font-semibold text-base transition-all duration-150">
                   WhatsApp →
                 </button>
               </a>
             </div>
-
-            <p className="text-gray-700 text-sm mt-10">
+            <p className="text-gray-500 text-sm mt-10">
               hello@securelaunch.co.in · Remote · Available Worldwide
             </p>
           </div>
         </div>
       </section>
 
-      {/* ── Mobile sticky CTA bar ──────────────────────── */}
-      <div className="fixed bottom-0 left-0 right-0 z-50 md:hidden border-t border-white/[0.06] bg-[#080C14]/95 backdrop-blur-xl px-6 py-4">
-        <a
-          href="https://calendly.com/kraubin192/30min"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="block w-full"
-        >
+      {/* ── Mobile Sticky CTA ──────────────────────────── */}
+      <div className="fixed bottom-0 left-0 right-0 z-50 md:hidden border-t border-white/[0.08] bg-[#080C14]/98 backdrop-blur-xl px-5 py-4 pb-safe">
+        <a href="https://calendly.com/kraubin192/30min" target="_blank" rel="noopener noreferrer" className="block w-full">
           <button className="w-full bg-cyan-500 hover:bg-cyan-400 active:scale-95 text-black py-4 rounded-xl font-bold text-base transition-all duration-150">
             Book Free Audit →
           </button>
@@ -466,7 +432,7 @@ export default function Home() {
       </div>
 
       {/* ── Footer ─────────────────────────────────────── */}
-      <footer className="border-t border-white/[0.05] py-8 text-center text-gray-700 text-sm mb-20 md:mb-0">
+      <footer className="border-t border-white/[0.05] py-8 text-center text-gray-600 text-sm mb-20 md:mb-0">
         <p>© {new Date().getFullYear()} SecureLaunch · Raubin Kumar</p>
         <p className="mt-1">QA Automation · DevOps & CI/CD · AI-Powered QA</p>
       </footer>
