@@ -1,9 +1,7 @@
 import Image from "next/image";
 
 export const metadata = {
-  title: "QA Automation for Startups | SecureLaunch",
-  description:
-    "I help early-stage startups ship confidently with Playwright automation, CI/CD pipelines, and AI-powered QA. Book a free 30-min audit with Raubin Kumar.",
+  title: "I help startups build AI systemsthey can trust.",
 };
 
 export default function Home() {
@@ -13,9 +11,34 @@ export default function Home() {
       {/* ── Nav ────────────────────────────────────────── */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-black/[0.06]">
         <div className="max-w-6xl mx-auto px-6 h-14 flex justify-between items-center">
-          <a href="/" className="text-base font-bold tracking-tight text-[#0a0a0a]">
-            Secure<span className="text-cyan-500">Launch</span>
-          </a>
+          <a
+  href="/"
+  className="flex items-center gap-3"
+>
+
+  <div className="w-9 h-9 rounded-xl bg-black flex items-center justify-center">
+
+    <span className="text-cyan-400 font-black text-sm">
+
+      SL
+
+    </span>
+
+  </div>
+
+  <div className="text-base font-bold tracking-tight">
+
+    Secure
+
+    <span className="text-cyan-500">
+
+      Launch
+
+    </span>
+
+  </div>
+
+</a>
           <div className="hidden md:flex items-center gap-8 text-sm text-gray-500">
             <a href="#services" className="hover:text-black transition-colors">Services</a>
             <a href="#cases"    className="hover:text-black transition-colors">Work</a>
@@ -25,7 +48,7 @@ export default function Home() {
               target="_blank" rel="noopener noreferrer"
               className="ml-2 bg-[#0a0a0a] hover:bg-[#222] text-white text-sm font-semibold px-5 py-2 rounded-lg transition-colors"
             >
-              Book Free Audit
+              Book AI Audit
             </a>
           </div>
           <a
@@ -38,92 +61,290 @@ export default function Home() {
         </div>
       </nav>
 
-      {/* ── Hero — Full screen, dramatic ───────────────── */}
-      <section className="min-h-screen flex flex-col justify-center max-w-6xl mx-auto px-6 pt-14">
-        <div className="py-24 md:py-0">
-          {/* Availability pill */}
-          <div className="inline-flex items-center gap-2 text-xs text-gray-500 mb-12">
-            <span className="w-1.5 h-1.5 bg-emerald-500 rounded-full" />
-            Available for new clients
-            <span className="text-gray-300 mx-1">·</span>
-            Remote · Worldwide
-          </div>
+      {/* ── Hero ───────────────────────────────────── */}
+<section className="min-h-screen flex flex-col justify-center max-w-6xl mx-auto px-6 pt-14">
 
-          {/* Headline — dramatic, full weight */}
-          <h1 className="text-[clamp(3rem,8vw,7rem)] font-black leading-[0.95] tracking-[-0.03em] max-w-5xl">
-            Your startup<br />
-            ships fast.<br />
-            <span className="text-gray-300">Does your QA?</span>
-          </h1>
+  <div className="py-16 md:py-0">
 
-          {/* Subtext — narrow, grounded */}
-          <p className="mt-10 text-lg text-gray-500 max-w-md leading-relaxed font-normal">
-            I build Playwright automation, CI/CD pipelines, and AI-powered QA for early-stage teams — so bugs stop reaching production.
-          </p>
+    <div className="inline-flex items-center gap-2 text-sm text-gray-500 mb-12 border border-gray-200 rounded-full px-4 py-2">
 
-          {/* CTAs */}
-          <div className="flex flex-wrap gap-4 mt-10">
-            <a href="https://calendly.com/kraubin192/30min" target="_blank" rel="noopener noreferrer">
-              <button className="bg-[#0a0a0a] hover:bg-[#222] text-white px-7 py-3.5 rounded-xl font-semibold text-sm transition-colors">
-                Book free 30-min audit →
-              </button>
-            </a>
-            <a href="#cases">
-              <button className="text-sm font-semibold text-gray-500 hover:text-black px-7 py-3.5 rounded-xl border border-gray-200 hover:border-gray-400 transition-colors">
-                See case studies
-              </button>
-            </a>
-          </div>
+      <span className="w-2 h-2 bg-emerald-500 rounded-full" />
 
-          {/* Bottom strip — credentials, not stats */}
-          <div className="mt-24 pt-8 border-t border-black/[0.07] flex flex-wrap gap-x-10 gap-y-4 text-sm text-gray-400">
-            <span>7+ years QA Automation</span>
-            <span className="text-gray-200">·</span>
-            <span>Playwright · Selenium · REST Assured</span>
-            <span className="text-gray-200">·</span>
-            <span>Docker · Kubernetes · AWS</span>
-            <span className="text-gray-200">·</span>
-            <span>GitHub Actions · Jenkins</span>
-          </div>
-        </div>
-      </section>
+      Trusted expertise in AI Testing • Playwright • DevOps • Security
 
+    </div>
+
+    <h1 className="text-[clamp(3rem,8vw,7rem)] font-black leading-[0.92] tracking-[-0.05em] max-w-5xl">
+
+      I help startups
+
+      <br />
+
+      build AI systems
+
+      <br />
+
+      <span className="text-gray-300">
+
+       they can trust.
+
+      </span>
+
+    </h1>
+
+    <p className="mt-10 text-xl text-gray-500 max-w-2xl leading-relaxed">
+
+      Testing AI isn't the same as testing software.
+
+I help startups catch hallucinations,
+
+build reliable automation
+
+and ship confidently.
+    </p>
+
+    <div className="flex flex-wrap gap-4 mt-12">
+
+      <a
+
+        href="https://calendly.com/kraubin192/30min"
+
+        target="_blank"
+
+        rel="noopener noreferrer"
+
+      >
+
+        <button className="bg-black hover:bg-neutral-800 text-white px-8 py-4 rounded-2xl font-semibold transition">
+
+          Book Free AI Audit →
+
+        </button>
+
+      </a>
+
+      <a href="#cases">
+
+        <button className="border border-gray-200 hover:border-gray-400 px-8 py-4 rounded-2xl text-gray-600 hover:text-black transition">
+
+          View Engineering Work
+
+        </button>
+
+      </a>
+
+    </div>
+
+    <div className="mt-16 pt-16 border-t border-black/[0.07] flex flex-wrap gap-x-10 gap-y-4 text-sm text-gray-400">
+
+      <span>7+ Years Experience</span>
+
+      <span className="text-gray-200">•</span>
+
+      <span>Anthropic • OpenAI • Python</span>
+
+      <span className="text-gray-200">•</span>
+
+      <span>Playwright • Selenium • REST Assured</span>
+
+      <span className="text-gray-200">•</span>
+
+      <span>Docker • Kubernetes • AWS</span>
+
+    </div>
+
+  </div>
+
+</section>
+
+{/* ── Why SecureLaunch ───────────────────────── */}
+
+<section className="max-w-6xl mx-auto px-6 py-20">
+
+  <div className="text-center">
+
+    <p className="text-sm uppercase tracking-[0.2em] text-gray-400 font-semibold">
+
+      Why SecureLaunch
+
+    </p>
+
+    <h2 className="text-4xl md:text-6xl font-black tracking-tight mt-6">
+
+      Build Trusted AI.
+
+      <br />
+
+      Not just test cases.
+
+    </h2>
+
+  </div>
+
+
+  <div className="grid md:grid-cols-3 gap-8 mt-20">
+
+
+    <div className="border border-black/[0.06] rounded-3xl p-10">
+
+      <h3 className="text-2xl font-bold">
+
+I test AI differently.
+
+</h3>
+
+<p className="text-gray-500 mt-5 leading-relaxed">
+
+Most QA teams test APIs.
+
+I test prompts,
+
+hallucinations,
+
+RAG systems
+
+and AI agents.
+
+Because AI fails differently.
+
+</p>
+    </div>
+
+
+
+    <div className="border border-black/[0.06] rounded-3xl p-10">
+
+      <h3 className="text-2xl font-bold">
+
+        Founder Led
+
+      </h3>
+
+      <p className="text-gray-500 mt-5 leading-relaxed">
+
+        Work directly with an experienced
+
+        SDET with expertise in Python,
+
+        Anthropic AI, Playwright
+
+        and DevOps.
+
+      </p>
+
+    </div>
+
+
+
+    <div className="border border-black/[0.06] rounded-3xl p-10">
+
+      <h3 className="text-2xl font-bold">
+
+        I care about production.
+
+      </h3>
+
+      <p className="text-gray-500 mt-5 leading-relaxed">
+
+        Testing is useless
+
+if software breaks in production.
+
+I focus on reliability,
+
+security and real-world failures.
+
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
       {/* ── Divider ────────────────────────────────────── */}
       <div className="max-w-6xl mx-auto px-6">
         <div className="border-t border-black/[0.07]" />
       </div>
 
       {/* ── Services ───────────────────────────────────── */}
-      <section id="services" className="max-w-6xl mx-auto px-6 py-28">
-        <div className="grid md:grid-cols-12 gap-16">
+      <section id="services" className="max-w-6xl mx-auto px-6 py-20">
+        <div className="grid md:grid-cols-12 gap-10">
           {/* Left label */}
           <div className="md:col-span-3">
             <p className="text-xs font-bold uppercase tracking-[0.15em] text-gray-400 sticky top-24">
-              What I do
+              What I Do
             </p>
           </div>
           {/* Right content */}
           <div className="md:col-span-9 space-y-0">
             {[
-              {
-                num: "01",
-                title: "QA Automation",
-                body: "Most startups I talk to are manually testing before every release. That's not a process — that's a prayer. I build Playwright and Selenium suites that run in CI, catch regressions before they reach users, and give your team real confidence to ship.",
-                pills: ["Playwright", "Selenium", "REST Assured", "Allure", "GitHub Actions"],
-              },
-              {
-                num: "02",
-                title: "DevOps & CI/CD",
-                body: "If your deploys feel scary, the problem isn't your engineers — it's your pipeline. I set up Docker, Kubernetes, and GitHub Actions with automated quality gates so every deploy is validated, rollback-ready, and boring. Boring deploys are good deploys.",
-                pills: ["GitHub Actions", "Docker", "Kubernetes", "AWS", "Jenkins"],
-              },
-              {
-                num: "03",
-                title: "AI-Powered QA",
-                body: "LLMs are genuinely useful for QA. Self-healing locators, AI-generated test cases from specs, failure analysis without the manual digging. I integrate these into your workflow so your team spends time on what matters, not on maintenance.",
-                pills: ["Claude API", "Self-Healing Locators", "NLP → Tests", "Failure Analysis"],
-              },
-            ].map((s, i, arr) => (
+  {
+    num: "01",
+
+    title: "AI Quality Engineering",
+
+    body:
+      "Modern AI systems fail in unexpected ways. I help startups test prompts, detect hallucinations, evaluate RAG pipelines and validate AI agents before they reach production.",
+
+    pills: [
+      "Prompt Testing",
+      "Hallucination Detection",
+      "RAG Evaluation",
+      "AI Agent Testing",
+      "Claude API",
+    ],
+  },
+
+  {
+    num: "02",
+
+    title: "QA Automation",
+
+    body:
+      "I build Playwright and Selenium frameworks that run in CI, catch regressions early and give your team confidence to ship faster.",
+
+    pills: [
+      "Playwright",
+      "Selenium",
+      "REST Assured",
+      "Allure",
+      "GitHub Actions",
+    ],
+  },
+
+  {
+    num: "03",
+
+    title: "DevOps & Reliability",
+
+    body:
+      "Reliable software needs reliable infrastructure. I build CI/CD pipelines, Docker environments and Kubernetes deployments engineered for fast and safe releases.",
+
+    pills: [
+      "Docker",
+      "Kubernetes",
+      "AWS",
+      "GitHub Actions",
+      "Jenkins",
+    ],
+  },
+
+  {
+    num: "04",
+
+    title: "Security Engineering",
+
+    body:
+      "Security should never be an afterthought. I help startups identify vulnerabilities, secure APIs and build safer production systems.",
+
+    pills: [
+      "OWASP",
+      "API Security",
+      "Vulnerability Assessment",
+      "Authentication",
+    ],
+  },
+].map((s, i, arr) => (
               <div
                 key={s.num}
                 className={`py-12 ${i < arr.length - 1 ? "border-b border-black/[0.07]" : ""}`}
@@ -153,70 +374,222 @@ export default function Home() {
         <div className="border-t border-black/[0.07]" />
       </div>
 
-      {/* ── Case Studies ───────────────────────────────── */}
-      <section id="cases" className="max-w-6xl mx-auto px-6 py-28">
-        <div className="grid md:grid-cols-12 gap-16">
-          <div className="md:col-span-3">
-            <p className="text-xs font-bold uppercase tracking-[0.15em] text-gray-400 sticky top-24">
-              Case studies
-              <span className="block mt-2 font-normal normal-case tracking-normal text-gray-300">
-                Names under NDA.
-                Results are real.
-              </span>
-            </p>
-          </div>
-          <div className="md:col-span-9 space-y-16">
-            {[
-              {
-                tag: "QA Automation",
-                title: "From 3-day regression cycles to 4-hour deploys",
-                problem: "A 6-person SaaS team was manually testing 200+ user flows before every release. Bugs still slipped through. The founder called me after a production incident that cost them a key client.",
-                solution: "Built a full Playwright E2E suite + REST API automation layer into GitHub Actions. Parallel execution, Allure reporting, coverage from 20% to 85%.",
-                result: "Release cycle: 3 days → 4 hours. Zero critical regressions in 3 months after launch.",
-                metric: "3d → 4h",
-              },
-              {
-                tag: "DevOps & CI/CD",
-                title: "Zero-downtime deploys for a fast-moving fintech",
-                problem: "Deployments over SSH, no staging, no rollback plan. Every deploy was a coin flip. The team had stopped shipping features because they were afraid to deploy.",
-                solution: "Docker + Kubernetes on AWS, GitHub Actions pipelines with automated smoke tests as quality gates, blue-green deployment strategy.",
-                result: "Multiple reliable deploys per week. Zero production incidents in 2 months after go-live.",
-                metric: "0 incidents",
-              },
-            ].map((c, i) => (
-              <div key={c.title} className={i > 0 ? "pt-16 border-t border-black/[0.07]" : ""}>
-                <span className="text-xs font-semibold text-cyan-500 uppercase tracking-widest">{c.tag}</span>
-                <h3 className="text-2xl md:text-3xl font-bold tracking-tight mt-3 max-w-2xl leading-snug">{c.title}</h3>
+      {/* ── Featured Engineering Work ───────────────── */}
 
-                <div className="mt-8 grid md:grid-cols-2 gap-8">
-                  <div>
-                    <p className="text-[11px] font-bold text-gray-300 uppercase tracking-widest mb-2">Problem</p>
-                    <p className="text-gray-500 text-sm leading-relaxed">{c.problem}</p>
-                  </div>
-                  <div>
-                    <p className="text-[11px] font-bold text-gray-300 uppercase tracking-widest mb-2">Solution</p>
-                    <p className="text-gray-500 text-sm leading-relaxed">{c.solution}</p>
-                  </div>
-                </div>
+<section className="max-w-6xl mx-auto px-6 py-20">
 
-                <div className="mt-8 flex items-center gap-6">
-                  <span className="text-4xl font-black tracking-tight text-[#0a0a0a]">{c.metric}</span>
-                  <span className="text-sm text-gray-400 max-w-xs leading-snug">{c.result}</span>
-                </div>
-              </div>
-            ))}
-          </div>
+  <div className="grid md:grid-cols-12 gap-10">
+
+    <div className="md:col-span-3">
+
+      <p className="text-xs font-bold uppercase tracking-[0.15em] text-gray-400 sticky top-24">
+
+        Things I'm Building
+
+      </p>
+
+    </div>
+
+
+    <div className="md:col-span-9 space-y-12">
+
+      {/* Project 1 */}
+
+      <div>
+
+        <span className="text-xs font-semibold text-black uppercase tracking-widest">
+
+          AI Testing
+
+        </span>
+
+        <h3 className="text-3xl font-black tracking-tight mt-3">
+
+          Claude Hallucination Testing
+
+        </h3>
+
+        <p className="text-gray-500 mt-5 max-w-2xl leading-relaxed">
+
+          I'm experimenting with ways to detect hallucinations,
+compare responses and improve AI reliability
+before production deployment.
+
+        </p>
+
+
+        <div className="flex flex-wrap gap-2 mt-6">
+
+          {[
+            "Claude",
+
+            "Anthropic",
+
+            "Python",
+
+            "Prompt Testing",
+
+            "Evaluation",
+
+          ].map((item) => (
+
+            <span
+
+              key={item}
+
+              className="text-xs text-gray-500 border border-black/[0.06] px-3 py-1 rounded-full"
+
+            >
+
+              {item}
+
+            </span>
+
+          ))}
+
         </div>
-      </section>
 
+      </div>
+
+
+
+      {/* Project 2 */}
+
+      <div className="pt-10 border-t border-black/[0.07]">
+
+        <span className="text-xs font-semibold text-black uppercase tracking-widest">
+
+          QA Automation
+
+        </span>
+
+        <h3 className="text-3xl font-black tracking-tight mt-3">
+
+          The Playwright Framework I Use
+
+        </h3>
+
+        <p className="text-gray-500 mt-5 max-w-2xl leading-relaxed">
+
+          The automation framework I use for
+UI, API and regression testing.
+
+Simple, fast and CI friendly.
+
+        </p>
+
+        <div className="flex flex-wrap gap-2 mt-6">
+
+          {[
+            "Playwright",
+
+            "REST Assured",
+
+            "GitHub Actions",
+
+            "Allure",
+
+            "Docker",
+
+          ].map((item) => (
+
+            <span
+
+              key={item}
+
+              className="text-xs text-gray-500 border border-black/[0.06] px-3 py-1 rounded-full"
+
+            >
+
+              {item}
+
+            </span>
+
+          ))}
+
+        </div>
+
+      </div>
+
+
+
+      {/* Project 3 */}
+
+      <div className="pt-16 border-t border-black/[0.07]">
+
+        <span className="text-xs font-semibold text-black uppercase tracking-widest">
+
+          DevOps
+
+        </span>
+
+        <h3 className="text-3xl font-black tracking-tight mt-3">
+
+          How I Ship Software
+
+        </h3>
+
+        <p className="text-gray-500 mt-5 max-w-2xl leading-relaxed">
+
+          Docker.
+
+Kubernetes.
+
+GitHub Actions.
+
+The stack I trust to ship software
+reliably.
+
+        </p>
+
+        <div className="flex flex-wrap gap-2 mt-6">
+
+          {[
+            "Docker",
+
+            "Kubernetes",
+
+            "AWS",
+
+            "GitHub Actions",
+
+            "Jenkins",
+
+          ].map((item) => (
+
+            <span
+
+              key={item}
+
+              className="text-xs text-gray-500 border border-black/[0.06] px-3 py-1 rounded-full"
+
+            >
+
+              {item}
+
+            </span>
+
+          ))}
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+      
       {/* ── Divider ────────────────────────────────────── */}
       <div className="max-w-6xl mx-auto px-6">
         <div className="border-t border-black/[0.07]" />
       </div>
 
       {/* ── How It Works ───────────────────────────────── */}
-      <section className="max-w-6xl mx-auto px-6 py-28">
-        <div className="grid md:grid-cols-12 gap-16">
+      <section className="max-w-6xl mx-auto px-6 py-20">
+        <div className="grid md:grid-cols-12 gap-10">
           <div className="md:col-span-3">
             <p className="text-xs font-bold uppercase tracking-[0.15em] text-gray-400 sticky top-24">
               How it works
@@ -240,89 +613,236 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ── Free QA Audit — full bleed dark section ────── */}
-      <section className="bg-[#0a0a0a] text-white py-28">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="grid md:grid-cols-12 gap-16">
-            <div className="md:col-span-3">
-              <p className="text-xs font-bold uppercase tracking-[0.15em] text-gray-500 sticky top-24">
-                Free audit
-                <span className="block mt-2 text-gray-600 font-normal normal-case tracking-normal">
-                  4 spots / month
-                </span>
-              </p>
-            </div>
-            <div className="md:col-span-9">
-              <h2 className="text-4xl md:text-5xl font-black tracking-tight leading-tight max-w-2xl">
-                Not sure where your QA stands?
-                <br />
-                <span className="text-gray-500">Let's find out in 30 minutes.</span>
-              </h2>
-              <p className="text-gray-400 mt-8 max-w-xl leading-relaxed">
-                I take 4 of these a month — enough to give it real attention. No pitch at the end. Just an honest assessment of where your testing process is failing and what to fix first.
-              </p>
+      {/* ── AI Reliability Audit ───────────────────── */}
 
-              <div className="grid md:grid-cols-2 gap-x-12 gap-y-3 mt-12">
-                {[
-                  "Review your current QA and release process",
-                  "Identify the highest-risk automation gaps",
-                  "CI/CD pipeline health check",
-                  "Playwright vs Selenium recommendation",
-                  "AI-powered QA opportunities",
-                  "30-min call + written summary after",
-                ].map((item) => (
-                  <div key={item} className="flex items-start gap-3 text-sm text-gray-400">
-                    <span className="text-cyan-500 mt-0.5 shrink-0">—</span>
-                    {item}
-                  </div>
-                ))}
-              </div>
+<section className="bg-[#0a0a0a] text-white py-32">
 
-              <div className="mt-12">
-                <a href="https://calendly.com/kraubin192/30min" target="_blank" rel="noopener noreferrer">
-                  <button className="bg-white hover:bg-gray-100 text-black px-8 py-4 rounded-xl font-bold text-sm transition-colors">
-                    Claim your free audit →
-                  </button>
-                </a>
-              </div>
+  <div className="max-w-6xl mx-auto px-6">
+
+    <div className="grid md:grid-cols-12 gap-10">
+
+      <div className="md:col-span-3">
+
+        <p className="text-xs font-bold uppercase tracking-[0.15em] text-gray-500 sticky top-24">
+
+          AI Reliability Audit
+
+        </p>
+
+      </div>
+
+
+
+      <div className="md:col-span-9">
+
+        <h2 className="text-4xl md:text-6xl font-black tracking-tight leading-tight max-w-3xl">
+
+          Building AI?
+
+          <br />
+
+          Let's make sure
+
+          <span className="text-gray-500">
+
+            it won't fail
+
+          </span>
+
+          in production.
+
+        </h2>
+
+
+        <p className="text-gray-400 mt-8 max-w-2xl text-lg leading-relaxed">
+
+          In a free 30-minute audit,
+
+          I'll review your AI application,
+
+          testing strategy and infrastructure
+
+          and show exactly where the risks are.
+
+        </p>
+
+
+
+        <div className="grid md:grid-cols-2 gap-x-12 gap-y-6 mt-14">
+
+          {[
+            "Prompt Testing",
+
+            "Hallucination Detection",
+
+            "RAG Evaluation",
+
+            "AI Agent Testing",
+
+            "QA Automation Review",
+
+            "DevOps Health Check",
+
+            "API Security Review",
+
+            "Written Action Plan",
+
+          ].map((item) => (
+
+            <div
+
+              key={item}
+
+              className="flex items-center gap-4"
+
+            >
+
+              <div className="w-2 h-2 rounded-full bg-cyan-500" />
+
+              <span className="text-gray-300">
+
+                {item}
+
+              </span>
+
             </div>
-          </div>
+
+          ))}
+
         </div>
-      </section>
+
+
+        <div className="mt-16 flex flex-wrap gap-4">
+
+          <a
+
+            href="https://calendly.com/kraubin192/30min"
+
+            target="_blank"
+
+            rel="noopener noreferrer"
+
+          >
+
+            <button className="bg-white hover:bg-gray-100 text-black px-8 py-4 rounded-2xl font-bold transition">
+
+              Book Free AI Audit →
+
+            </button>
+
+          </a>
+
+
+          <span className="text-gray-500 text-sm self-center">
+
+            Limited slots every month
+
+          </span>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
 
       {/* ── About ──────────────────────────────────────── */}
-      <section id="about" className="max-w-6xl mx-auto px-6 py-28">
-        <div className="grid md:grid-cols-12 gap-16 items-start">
+      <section id="about" className="max-w-6xl mx-auto px-6 py-20">
+        <div className="grid md:grid-cols-12 gap-10 items-start">
           <div className="md:col-span-3">
             <p className="text-xs font-bold uppercase tracking-[0.15em] text-gray-400 sticky top-24">
               About
             </p>
           </div>
           <div className="md:col-span-9">
-            <div className="grid md:grid-cols-2 gap-16 items-center">
+            <div className="grid md:grid-cols-2 gap-10 items-center">
               <div>
                 <h2 className="text-3xl md:text-4xl font-black tracking-tight">Raubin Kumar</h2>
-                <p className="text-gray-500 mt-6 leading-relaxed">
-                  I've spent 7+ years building testing infrastructure for software teams — fintech, SaaS, enterprise. I've seen what happens when QA is an afterthought. A production incident, a lost client, a team that's afraid to deploy on Fridays.
-                </p>
-                <p className="text-gray-500 mt-4 leading-relaxed">
-                  I started SecureLaunch to fix that for early-stage startups before it becomes a crisis, not after.
-                </p>
-                <p className="text-gray-500 mt-4 leading-relaxed">
-                  When you book a call, you talk to me. Not an account manager. Not a junior dev. Me — the same person who'll design and build your solution.
-                </p>
-                <div className="flex gap-6 mt-8">
+                <p className="text-cyan-500 font-semibold mt-5">
+
+  Founder · AI Quality Engineer · SDET
+
+</p>
+
+<p className="text-gray-500 mt-8 leading-relaxed text-lg">
+
+  I help AI startups and SaaS companies
+  build reliable, secure and production-ready
+  systems through AI testing,
+  QA automation and DevOps.
+
+</p>
+
+<p className="text-gray-500 mt-6 leading-relaxed">
+
+  With 7+ years of experience in software
+  quality engineering, I specialize in
+  Playwright, Python, Anthropic AI,
+  Kubernetes and cloud-native testing.
+
+</p>
+
+<div className="mt-10 flex flex-wrap gap-3">
+
+  {[
+    "AI Quality Engineering",
+    "Anthropic Claude",
+    "Python",
+    "Playwright",
+    "DevOps",
+    "AWS",
+    "Kubernetes"
+  ].map((item)=>(
+
+    <span
+
+      key={item}
+
+      className="text-sm border border-black/[0.06] rounded-full px-4 py-2 text-gray-500"
+
+    >
+
+      {item}
+
+    </span>
+
+  ))}
+
+</div>
+<p className="text-gray-500 mt-8 leading-relaxed">
+
+My mission is simple —
+
+help startups build trusted AI systems
+
+that are reliable, secure and ready
+
+for production from day one.
+
+</p>                <div className="flex gap-6 mt-8">
                   <a href="https://www.linkedin.com/in/raubink/" target="_blank" rel="noopener noreferrer"
-                    className="text-sm font-semibold text-[#0a0a0a] hover:text-cyan-500 transition-colors">
+                    className="text-sm font-semibold text-gray-600 hover:text-black transition-colors">
                     LinkedIn ↗
                   </a>
                   <a href="https://github.com/kraubin" target="_blank" rel="noopener noreferrer"
-                    className="text-sm font-semibold text-[#0a0a0a] hover:text-cyan-500 transition-colors">
+                    className="text-sm font-semibold text-gray-600 hover:text-black transition-colors">
                     GitHub ↗
                   </a>
                 </div>
               </div>
               <div className="relative rounded-2xl overflow-hidden aspect-square bg-gray-100">
+                <div className="absolute top-5 left-5 z-10">
+
+  <div className="bg-white border border-black/[0.06] rounded-full px-4 py-2 text-xs font-semibold shadow-sm">
+
+    Building Trusted AI
+
+  </div>
+
+</div>
                 <Image
                   src="/raubin.jpg"
                   alt="Raubin Kumar — Founder, SecureLaunch"
@@ -336,14 +856,111 @@ export default function Home() {
         </div>
       </section>
 
+
+      {/* ── SecureLaunch AI Eval ───────────────── */}
+
+<section className="max-w-6xl mx-auto px-6 py-20">
+
+  <div className="grid md:grid-cols-12 gap-10">
+
+    <div className="md:col-span-3">
+
+      <p className="text-xs font-bold uppercase tracking-[0.15em] text-gray-400">
+
+        Framework
+
+      </p>
+
+    </div>
+
+
+    <div className="md:col-span-9">
+
+      <span className="text-sm text-cyan-500 font-semibold">
+
+        Currently Building
+
+      </span>
+
+
+      <h2 className="text-5xl md:text-6xl font-black tracking-tight mt-6">
+
+        SecureLaunch
+
+        <br />
+
+        AI Eval
+
+      </h2>
+
+
+      <p className="text-gray-500 text-lg mt-8 max-w-2xl leading-relaxed">
+
+        This is the toolkit I'm building
+
+to test prompts,
+
+detect hallucinations
+
+and evaluate AI systems.
+
+Still evolving.
+
+Just like AI itself.
+
+      </p>
+
+
+      <div className="flex flex-wrap gap-3 mt-12">
+
+        {[
+          "Prompt Testing",
+
+          "Hallucination Detection",
+
+          "Claude Evaluation",
+
+          "GPT Evaluation",
+
+          "RAG Evaluation",
+
+          "AI Agent Testing",
+
+          "Regression Testing",
+
+        ].map((item)=>(
+
+          <span
+
+            key={item}
+
+            className="border border-black/[0.06] rounded-full px-4 py-2 text-sm text-gray-500"
+
+          >
+
+            {item}
+
+          </span>
+
+        ))}
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
       {/* ── Divider ────────────────────────────────────── */}
       <div className="max-w-6xl mx-auto px-6">
         <div className="border-t border-black/[0.07]" />
       </div>
 
       {/* ── FAQ ────────────────────────────────────────── */}
-      <section className="max-w-6xl mx-auto px-6 py-28">
-        <div className="grid md:grid-cols-12 gap-16">
+      <section className="max-w-6xl mx-auto px-6 py-20">
+        <div className="grid md:grid-cols-12 gap-10">
           <div className="md:col-span-3">
             <p className="text-xs font-bold uppercase tracking-[0.15em] text-gray-400 sticky top-24">
               FAQ
@@ -352,20 +969,20 @@ export default function Home() {
           <div className="md:col-span-9 space-y-0">
             {[
               {
-                q: "Are you a team or a solo consultant?",
-                a: "Solo. You work directly with me — Raubin Kumar. No account managers, no handoffs to junior devs. That's the whole point.",
+                q: "Will I work with you directly?",
+                a: "Yes. I'm not running a big agency. When you book a call, you talk directly to me.I design it. I build it. I maintain it.",
               },
               {
-                q: "Why hire you instead of an Upwork freelancer?",
-                a: "I don't write test scripts — I design QA systems. There's a real difference. After 7+ years doing this across fintech, SaaS, and enterprise products, I know what breaks before it breaks.",
+                q: "Why do you focus on AI quality?",
+                a: "Because AI fails differently. Traditional QA catches bugs. AI Quality Engineering catches: • Hallucinations • Bad prompts • RAG failures • Agent mistakes That's the problem I'm obsessed with solving.",
               },
               {
-                q: "Do you work with non-Indian startups?",
-                a: "Yes. Everything is remote. I work with teams across India, Southeast Asia, and Europe.",
+                q: "Who do you work with?",
+                a: "Mostly early-stage startups. AI startups. SaaS companies. Founders who move fast and care about quality.",
               },
               {
-                q: "What's the smallest engagement?",
-                a: "The free audit is zero commitment. From there, the smallest paid engagement is a focused 2-week sprint.",
+                q: "What happens in the AI Audit?",
+                a: "I'll review: • Your AI application • Testing strategy • DevOps setup • Security risks And tell you exactly what I'd fix first. No fluff. No pressure. No sales tricks.",
               },
             ].map((faq, i, arr) => (
               <div
@@ -382,26 +999,46 @@ export default function Home() {
 
       {/* ── Contact — full bleed ───────────────────────── */}
       <section id="contact" className="border-t border-black/[0.07]">
-        <div className="max-w-6xl mx-auto px-6 py-28">
-          <div className="grid md:grid-cols-12 gap-16 items-end">
+        <div className="max-w-6xl mx-auto px-6 py-20">
+          <div className="grid md:grid-cols-12 gap-10 items-end">
             <div className="md:col-span-8">
               <h2 className="text-5xl md:text-7xl font-black tracking-tight leading-[0.95]">
-                Let's talk<br />
-                about your<br />
-                <span className="text-gray-300">QA.</span>
-              </h2>
+
+  Build Trusted AI.
+
+  <br />
+
+  Ship Faster.
+
+  <br />
+
+  <span className="text-gray-300">
+
+    Sleep Better.
+
+  </span>
+
+</h2>
               <p className="text-gray-500 mt-8 max-w-lg leading-relaxed">
-                Book a free 30-minute audit. I'll review your current setup and tell you exactly what I'd fix first — no strings attached.
-              </p>
+
+Book a free AI Reliability Audit.
+
+I'll review your AI application,
+
+testing strategy and infrastructure
+
+and tell you exactly what I'd fix first.
+
+</p>
               <div className="flex flex-wrap gap-4 mt-10">
                 <a href="https://calendly.com/kraubin192/30min" target="_blank" rel="noopener noreferrer">
                   <button className="bg-[#0a0a0a] hover:bg-[#222] text-white px-8 py-4 rounded-xl font-bold text-sm transition-colors">
-                    Book a slot →
+                    Book Free AI Audit →
                   </button>
                 </a>
                 <a href="mailto:hello@securelaunch.co.in">
                   <button className="border border-gray-200 hover:border-gray-400 text-gray-600 hover:text-black px-8 py-4 rounded-xl font-semibold text-sm transition-colors">
-                    Email me
+                    hello@securelaunch.co.in
                   </button>
                 </a>
                 <a href="https://wa.me/919845857619" target="_blank" rel="noopener noreferrer">
@@ -423,7 +1060,7 @@ export default function Home() {
       <div className="fixed bottom-0 left-0 right-0 z-50 md:hidden bg-white/95 backdrop-blur border-t border-black/[0.08] px-5 py-4">
         <a href="https://calendly.com/kraubin192/30min" target="_blank" rel="noopener noreferrer" className="block">
           <button className="w-full bg-[#0a0a0a] text-white py-3.5 rounded-xl font-bold text-sm">
-            Book Free Audit →
+            Book AI Audit →
           </button>
         </a>
       </div>
@@ -431,8 +1068,10 @@ export default function Home() {
       {/* ── Footer ─────────────────────────────────────── */}
       <footer className="border-t border-black/[0.07] py-8 mb-16 md:mb-0">
         <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-400">
-          <span>© {new Date().getFullYear()} SecureLaunch · Raubin Kumar</span>
-          <span>QA Automation · DevOps & CI/CD · AI-Powered QA</span>
+          <span suppressHydrationWarning>
+  © {new Date().getFullYear()} SecureLaunch · Raubin Kumar
+</span>
+          <span>Built by Raubin Kumar. Obsessed with quality. Currently building SecureLaunch.</span>
         </div>
       </footer>
 
