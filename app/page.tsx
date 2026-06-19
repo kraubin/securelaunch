@@ -6,10 +6,10 @@ export const metadata = {
 
 export default function Home() {
   return (
-    <main className="bg-white text-[#0a0a0a] font-sans antialiased overflow-x-hidden selection:bg-cyan-100">
+    <main className="bg-[#F7F7F5] text-[#0a0a0a] font-sans antialiased overflow-x-hidden selection:bg-cyan-100">
 
       {/* ── Nav ────────────────────────────────────────── */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-black/[0.06]">
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-[#F7F7F5]/90 backdrop-blur-md border-b border-black/[0.06]">
         <div className="max-w-6xl mx-auto px-6 h-14 flex justify-between items-center">
           <a
   href="/"
@@ -18,7 +18,7 @@ export default function Home() {
 
   <div className="w-9 h-9 rounded-xl bg-black flex items-center justify-center">
 
-    <span className="text-cyan-400 font-black text-sm">
+    <span className="text-[#4A90E2] font-black text-sm">
 
       SL
 
@@ -30,7 +30,7 @@ export default function Home() {
 
     Secure
 
-    <span className="text-cyan-500">
+    <span className="text-[#4A90E2]">
 
       Launch
 
@@ -39,7 +39,7 @@ export default function Home() {
   </div>
 
 </a>
-          <div className="hidden md:flex items-center gap-8 text-sm text-gray-500">
+          <div className="hidden md:flex items-center gap-8 text-sm text-[#6B6B67]">
             <a href="#services" className="hover:text-black transition-colors">Services</a>
             <a href="#cases"    className="hover:text-black transition-colors">Work</a>
             <a href="#about"    className="hover:text-black transition-colors">About</a>
@@ -66,7 +66,7 @@ export default function Home() {
 
   <div className="py-16 md:py-0">
 
-    <div className="inline-flex items-center gap-2 text-sm text-gray-500 mb-12 border border-gray-200 rounded-full px-4 py-2">
+    <div className="inline-flex items-center gap-2 text-sm text-[#6B6B67] mb-12 border border-gray-200 rounded-full px-4 py-2">
 
       <span className="w-2 h-2 bg-emerald-500 rounded-full" />
 
@@ -92,7 +92,7 @@ export default function Home() {
 
     </h1>
 
-    <p className="mt-10 text-xl text-gray-500 max-w-2xl leading-relaxed">
+    <p className="mt-10 text-xl text-[#6B6B67] max-w-2xl leading-relaxed">
 
       Testing AI isn't the same as testing software.
 
@@ -185,7 +185,7 @@ and ship confidently.
   <div className="grid md:grid-cols-3 gap-8 mt-20">
 
 
-    <div className="border border-black/[0.06] rounded-3xl p-10">
+    <div className="border border-[#E8E8E3] rounded-3xl p-10">
 
       <h3 className="text-2xl font-bold">
 
@@ -193,7 +193,7 @@ I test AI differently.
 
 </h3>
 
-<p className="text-gray-500 mt-5 leading-relaxed">
+<p className="text-[#6B6B67] mt-5 leading-relaxed">
 
 Most QA teams test APIs.
 
@@ -212,7 +212,7 @@ Because AI fails differently.
 
 
 
-    <div className="border border-black/[0.06] rounded-3xl p-10">
+    <div className="border border-[#E8E8E3] rounded-3xl p-10">
 
       <h3 className="text-2xl font-bold">
 
@@ -220,7 +220,7 @@ Because AI fails differently.
 
       </h3>
 
-      <p className="text-gray-500 mt-5 leading-relaxed">
+      <p className="text-[#6B6B67] mt-5 leading-relaxed">
 
         Work directly with an experienced
 
@@ -236,7 +236,7 @@ Because AI fails differently.
 
 
 
-    <div className="border border-black/[0.06] rounded-3xl p-10">
+    <div className="border border-[#E8E8E3] rounded-3xl p-10">
 
       <h3 className="text-2xl font-bold">
 
@@ -244,7 +244,7 @@ Because AI fails differently.
 
       </h3>
 
-      <p className="text-gray-500 mt-5 leading-relaxed">
+      <p className="text-[#6B6B67] mt-5 leading-relaxed">
 
         Testing is useless
 
@@ -263,7 +263,7 @@ security and real-world failures.
 </section>
       {/* ── Divider ────────────────────────────────────── */}
       <div className="max-w-6xl mx-auto px-6">
-        <div className="border-t border-black/[0.07]" />
+        <div className="border-t border-[#E8E8E3]" />
       </div>
 
       {/* ── Services ───────────────────────────────────── */}
@@ -347,16 +347,16 @@ security and real-world failures.
 ].map((s, i, arr) => (
               <div
                 key={s.num}
-                className={`py-12 ${i < arr.length - 1 ? "border-b border-black/[0.07]" : ""}`}
+                className={`py-12 ${i < arr.length - 1 ? "border-b border-[#E8E8E3]" : ""}`}
               >
                 <div className="flex gap-6 items-start">
                   <span className="text-xs text-gray-300 font-mono mt-1 shrink-0">{s.num}</span>
                   <div className="flex-1">
                     <h3 className="text-2xl font-bold tracking-tight">{s.title}</h3>
-                    <p className="text-gray-500 mt-4 leading-relaxed text-base max-w-2xl">{s.body}</p>
+                    <p className="text-[#6B6B67] mt-4 leading-relaxed text-base max-w-2xl">{s.body}</p>
                     <div className="flex flex-wrap gap-2 mt-6">
                       {s.pills.map((p) => (
-                        <span key={p} className="text-xs text-gray-500 border border-gray-200 px-3 py-1 rounded-full">
+                        <span key={p} className="text-xs text-[#6B6B67] border border-[#E8E8E3] px-3 py-1 rounded-full">
                           {p}
                         </span>
                       ))}
@@ -371,7 +371,7 @@ security and real-world failures.
 
       {/* ── Divider ────────────────────────────────────── */}
       <div className="max-w-6xl mx-auto px-6">
-        <div className="border-t border-black/[0.07]" />
+        <div className="border-t border-[#E8E8E3]" />
       </div>
 
       {/* ── Featured Engineering Work ───────────────── */}
@@ -409,7 +409,7 @@ security and real-world failures.
 
         </h3>
 
-        <p className="text-gray-500 mt-5 max-w-2xl leading-relaxed">
+        <p className="text-[#6B6B67] mt-5 max-w-2xl leading-relaxed">
 
           I'm experimenting with ways to detect hallucinations,
 compare responses and improve AI reliability
@@ -437,7 +437,7 @@ before production deployment.
 
               key={item}
 
-              className="text-xs text-gray-500 border border-black/[0.06] px-3 py-1 rounded-full"
+              className="text-xs text-[#6B6B67] border border-[#E8E8E3] px-3 py-1 rounded-full"
 
             >
 
@@ -455,7 +455,7 @@ before production deployment.
 
       {/* Project 2 */}
 
-      <div className="pt-10 border-t border-black/[0.07]">
+      <div className="pt-10 border-t border-[#E8E8E3]">
 
         <span className="text-xs font-semibold text-black uppercase tracking-widest">
 
@@ -469,7 +469,7 @@ before production deployment.
 
         </h3>
 
-        <p className="text-gray-500 mt-5 max-w-2xl leading-relaxed">
+        <p className="text-[#6B6B67] mt-5 max-w-2xl leading-relaxed">
 
           The automation framework I use for
 UI, API and regression testing.
@@ -497,7 +497,7 @@ Simple, fast and CI friendly.
 
               key={item}
 
-              className="text-xs text-gray-500 border border-black/[0.06] px-3 py-1 rounded-full"
+              className="text-xs text-[#6B6B67] border border-[#E8E8E3] px-3 py-1 rounded-full"
 
             >
 
@@ -529,7 +529,7 @@ Simple, fast and CI friendly.
 
         </h3>
 
-        <p className="text-gray-500 mt-5 max-w-2xl leading-relaxed">
+        <p className="text-[#6B6B67] mt-5 max-w-2xl leading-relaxed">
 
           Docker.
 
@@ -561,7 +561,7 @@ reliably.
 
               key={item}
 
-              className="text-xs text-gray-500 border border-black/[0.06] px-3 py-1 rounded-full"
+              className="text-xs text-[#6B6B67] border border-[#E8E8E3] px-3 py-1 rounded-full"
 
             >
 
@@ -605,7 +605,7 @@ reliably.
                 <div key={s.n}>
                   <span className="text-xs font-mono text-gray-300">{s.n}</span>
                   <h3 className="text-lg font-bold mt-3">{s.title}</h3>
-                  <p className="text-gray-500 text-sm mt-3 leading-relaxed">{s.desc}</p>
+                  <p className="text-[#6B6B67] text-sm mt-3 leading-relaxed">{s.desc}</p>
                 </div>
               ))}
             </div>
@@ -623,7 +623,7 @@ reliably.
 
       <div className="md:col-span-3">
 
-        <p className="text-xs font-bold uppercase tracking-[0.15em] text-gray-500 sticky top-24">
+        <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#6B6B67] sticky top-24">
 
           AI Reliability Audit
 
@@ -643,7 +643,7 @@ reliably.
 
           Let's make sure
 
-          <span className="text-gray-500">
+          <span className="text-[#6B6B67]">
 
             it won't fail
 
@@ -697,7 +697,7 @@ reliably.
 
             >
 
-              <div className="w-2 h-2 rounded-full bg-cyan-500" />
+              <div className="w-2 h-2 rounded-full bg-[#4A90E2]" />
 
               <span className="text-gray-300">
 
@@ -733,7 +733,7 @@ reliably.
           </a>
 
 
-          <span className="text-gray-500 text-sm self-center">
+          <span className="text-[#6B6B67] text-sm self-center">
 
             Limited slots every month
 
@@ -761,13 +761,13 @@ reliably.
             <div className="grid md:grid-cols-2 gap-10 items-center">
               <div>
                 <h2 className="text-3xl md:text-4xl font-black tracking-tight">Raubin Kumar</h2>
-                <p className="text-cyan-500 font-semibold mt-5">
+                <p className="text-[#4A90E2] font-semibold mt-5">
 
   Founder · AI Quality Engineer · SDET
 
 </p>
 
-<p className="text-gray-500 mt-8 leading-relaxed text-lg">
+<p className="text-[#6B6B67] mt-8 leading-relaxed text-lg">
 
   I help AI startups and SaaS companies
   build reliable, secure and production-ready
@@ -776,7 +776,7 @@ reliably.
 
 </p>
 
-<p className="text-gray-500 mt-6 leading-relaxed">
+<p className="text-[#6B6B67] mt-6 leading-relaxed">
 
   With 7+ years of experience in software
   quality engineering, I specialize in
@@ -801,7 +801,7 @@ reliably.
 
       key={item}
 
-      className="text-sm border border-black/[0.06] rounded-full px-4 py-2 text-gray-500"
+      className="text-sm border border-[#E8E8E3] rounded-full px-4 py-2 text-[#6B6B67]"
 
     >
 
@@ -812,7 +812,7 @@ reliably.
   ))}
 
 </div>
-<p className="text-gray-500 mt-8 leading-relaxed">
+<p className="text-[#6B6B67] mt-8 leading-relaxed">
 
 My mission is simple —
 
@@ -836,7 +836,7 @@ for production from day one.
               <div className="relative rounded-2xl overflow-hidden aspect-square bg-gray-100">
                 <div className="absolute top-5 left-5 z-10">
 
-  <div className="bg-white border border-black/[0.06] rounded-full px-4 py-2 text-xs font-semibold shadow-sm">
+  <div className="bg-white border border-[#E8E8E3] rounded-full px-4 py-2 text-xs font-semibold shadow-sm">
 
     Building Trusted AI
 
@@ -876,7 +876,7 @@ for production from day one.
 
     <div className="md:col-span-9">
 
-      <span className="text-sm text-cyan-500 font-semibold">
+      <span className="text-sm text-[#4A90E2] font-semibold">
 
         Currently Building
 
@@ -894,7 +894,7 @@ for production from day one.
       </h2>
 
 
-      <p className="text-gray-500 text-lg mt-8 max-w-2xl leading-relaxed">
+      <p className="text-[#6B6B67] text-lg mt-8 max-w-2xl leading-relaxed">
 
         This is the toolkit I'm building
 
@@ -934,7 +934,7 @@ Just like AI itself.
 
             key={item}
 
-            className="border border-black/[0.06] rounded-full px-4 py-2 text-sm text-gray-500"
+            className="border border-[#E8E8E3] rounded-full px-4 py-2 text-sm text-[#6B6B67]"
 
           >
 
@@ -990,7 +990,7 @@ Just like AI itself.
                 className={`py-8 ${i < arr.length - 1 ? "border-b border-black/[0.07]" : ""}`}
               >
                 <h3 className="font-bold text-base text-[#0a0a0a]">{faq.q}</h3>
-                <p className="text-gray-500 text-sm mt-3 leading-relaxed max-w-2xl">{faq.a}</p>
+                <p className="text-[#6B6B67] text-sm mt-3 leading-relaxed max-w-2xl">{faq.a}</p>
               </div>
             ))}
           </div>
@@ -1019,7 +1019,7 @@ Just like AI itself.
   </span>
 
 </h2>
-              <p className="text-gray-500 mt-8 max-w-lg leading-relaxed">
+              <p className="text-[#6B6B67] mt-8 max-w-lg leading-relaxed">
 
 Book a free AI Reliability Audit.
 
